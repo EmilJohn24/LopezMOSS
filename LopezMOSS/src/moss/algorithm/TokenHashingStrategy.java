@@ -3,10 +3,10 @@ package moss.algorithm;
 import java.io.IOException;
 import java.io.Reader;
 
-public class LineComparisonStrategy implements ComparisonStrategy {
+public class TokenHashingStrategy implements ComparisonStrategy {
 
     private TokenOccurrenceTable table;
-    public LineComparisonStrategy(){
+    public TokenHashingStrategy(){
         table = new TokenOccurrenceTable();
     }
 

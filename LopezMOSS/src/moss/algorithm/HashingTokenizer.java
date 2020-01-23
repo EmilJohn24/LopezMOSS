@@ -7,7 +7,6 @@ import java.util.Collection;
 
 class HashingTokenizer {
     private StreamTokenizer tokenizer;
-    private Collection<Token> blackList;
     static final int EOF = 0;
     static final int EOL = 1;
     static final int NUMBER = 5;
