@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c9d7883-4ba3-4ca5-9987-924617f718d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/LineComparisonStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../User_Cases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../User_Cases.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LopezMOSS  Prototype Architecture.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../LopezMOSS  Prototype Architecture.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Software Specifications.doc" beforeDir="false" afterPath="$PROJECT_DIR$/../Software Specifications.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../User_Cases.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="85">
+              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -416,8 +413,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="85">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
