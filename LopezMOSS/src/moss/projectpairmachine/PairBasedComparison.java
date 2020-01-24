@@ -1,5 +1,4 @@
-package moss.pairmachine;
+package moss.projectpairmachine;
 
 public class PairBasedComparison {
-
 }
