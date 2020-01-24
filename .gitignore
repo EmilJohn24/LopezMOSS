@@ -3,7 +3,8 @@
 
 # Extra or IntelliJ generated libraries
 # Did not include .idea to preserve project structure
-out/*
+*/out/*
+
 
 #Others
 *.zip
