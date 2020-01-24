@@ -1,4 +1,4 @@
-package moss.projectpairmachine;
+package moss.project;
 
 
 import java.io.*;
@@ -7,19 +7,25 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.stream.Stream;
 
-class ProjectFlatReaderDistributor {
+public class ProjectFlatReaderDistributor {
     private final MultiStreamReaderGenerator generator;
     static final String CPP_FILTER = "**/*.cpp";
     static final String JAVA_FILTER = "**/*.java";
     static final String TXT_FILTER = "**/*.txt";
+    static final String NO_FILTER = "*.";
 
-    ProjectFlatReaderDistributor(Path path) throws IOException {
-        this(path, "*.");
+    public ProjectFlatReaderDistributor(Path projectPath){
+        this(projectPath, ProjectFlatReaderDistributor.NO_FILTER);
     }
 
-    //if an empty string is passed to extension, this will not do any extension filtering
-    //the filter uses the GLOB syntax
-    ProjectFlatReaderDistributor(Path projectPath, String globFilter) {
+    /**
+     * if an empty string is passed to extension, this will not do any extension filtering
+     * the filter uses the GLOB syntax
+     * @param projectPath
+     * @param globFilter
+     */
+
+    public ProjectFlatReaderDistributor(Path projectPath, String globFilter) {
         MultiStreamReaderGenerator generatorTmp;
         PathMatcher globMatcher = FileSystems.getDefault().getPathMatcher("glob:" + globFilter);
         Collection<InputStream> inputFileStreams = new ArrayList<>();

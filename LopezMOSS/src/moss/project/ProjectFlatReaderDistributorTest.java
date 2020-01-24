@@ -1,4 +1,4 @@
-package moss.projectpairmachine;
+package moss.project;
 
 import org.junit.Test;
 import org.junit.Before; 
@@ -6,8 +6,6 @@ import org.junit.After;
 
 import java.io.File;
 import java.io.Reader;
-import java.net.URI;
-import java.net.URL;
 import java.nio.file.Paths;
 
 /** 
@@ -35,7 +33,7 @@ public void after() throws Exception {
 @Test
 public void testDistribute() throws Exception { 
 //TODO: Test goes here...
-    ProjectFlatReaderDistributor distributor = new ProjectFlatReaderDistributor(Paths.get(new File("testfiles/project1").getAbsolutePath()),
+    ProjectFlatReaderDistributor distributor = new ProjectFlatReaderDistributor(TestObjects.TEST_PROJECT_1_PATH,
             ProjectFlatReaderDistributor.TXT_FILTER);
     Reader reader = distributor.distribute();
     assert(reader.read() == 'c');

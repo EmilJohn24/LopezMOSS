@@ -1,4 +1,4 @@
-package moss.projectpairmachine;
+package moss.project;
 
 import org.junit.Test;
 import org.junit.Before; 

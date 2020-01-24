@@ -1,4 +1,4 @@
-package moss.projectpairmachine;
+package moss.project;
 
 import org.apache.commons.io.IOUtils;
 
