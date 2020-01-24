@@ -1,5 +1,5 @@
-class HelloAgain {  
-    public static void main(String args[])  {  
+class MasterClass {  
+    public static main(String args[])  {  
         System.out.println("Hi, World");  
     }  
 } 
