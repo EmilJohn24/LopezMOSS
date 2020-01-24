@@ -12,7 +12,7 @@ public class ProjectFlatReaderDistributor {
     static final String CPP_FILTER = "**/*.cpp";
     static final String JAVA_FILTER = "**/*.java";
     static final String TXT_FILTER = "**/*.txt";
-    static final String NO_FILTER = "*.";
+    static final String NO_FILTER = "**/*";
 
     public ProjectFlatReaderDistributor(Path projectPath){
         this(projectPath, ProjectFlatReaderDistributor.NO_FILTER);
