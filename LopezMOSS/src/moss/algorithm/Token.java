@@ -1,11 +1,8 @@
 package moss.algorithm;
 
-import org.junit.Assert;
-import org.omg.CORBA.Any;
-
 import java.util.Objects;
-import java.util.Observable;
 
+@SuppressWarnings("unused")
 public class Token {
     public enum TYPE{
         EOL, NUMBER, WORD, STRING_LITERAL, IGNORE, OTHER, NONE
@@ -24,12 +21,25 @@ public class Token {
         private Object value;
         private TYPE type;
 
+        /**
+         *
+         * @param type token type of the token to be built
+         * @return returns the called builder (Stream)
+         * @see TYPE
+         */
         @SuppressWarnings({"SameParameterValue", "UnusedReturnValue"})
         final TokenBuilder setType(TYPE type){
-            return setTypeValue(type, null);
+            return setTypeWithValue(type, null);
         }
 
-        final <T> TokenBuilder setTypeValue(TYPE type, T value){
+        /**
+         * @param type token type of the token to be built
+         * @param value underlying value of the token (e.g. a number for number tokens)
+         * @param <T> specifies the type of <i>value</i>
+         * @return returns the called builder (Stream)
+         * @see TYPE
+         */
+        final <T> TokenBuilder setTypeWithValue(TYPE type, T value){
             this.type = type;
             this.value = value;
             //NOTE: this null check is necessary because if there is no SPECIFIC value for a particular token,
@@ -42,12 +52,21 @@ public class Token {
         }
 
 
+        /**
+         * @param lineNo Line number of the token to be built
+         * @return returns the called builder (Stream)
+         */
         TokenBuilder setLineNo(int lineNo) {
             this.lineNo = lineNo;
             return this;
         }
 
 
+        /**
+         *
+         * @return returns a built token with the entered values
+         *
+         */
         public Token createToken() {
             return new Token(id, lineNo, value);
         }
@@ -60,14 +79,24 @@ public class Token {
         this.value = value;
     }
 
+    /**
+     * @return returns the token's line number
+     */
     public final int getLineNo() {
         return lineNo;
     }
 
+    /**
+     * @return returns the auto-generated identifier of the token
+     */
     public final int getId() {
         return id;
     }
 
+    /**
+     * @param other token being compared to
+     * @return equality of the tokens (based on their Id)
+     */
     @Override
     public final boolean equals(Object other){
         //TODO: Write motivation for using only id as the identifier of the class
@@ -76,6 +105,11 @@ public class Token {
         return ref.id == this.id;
     }
 
+    /**
+     * The hash code is based on the hash of the token's ID.
+     * This has the consequence of two non-valued tokens getting the same ID
+     * @return hash code of the token
+     */
     @Override
     public final int hashCode() {
         return Objects.hash(id);

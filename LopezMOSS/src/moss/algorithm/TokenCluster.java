@@ -11,6 +11,10 @@ import java.util.Objects;
 class TokenCluster {
     private final Collection<Token> tokens;
 
+    /**
+     * @param o cluster being compared with
+     * @return equality of the two clusters based on the equality of each token in them
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -19,6 +23,9 @@ class TokenCluster {
         return tokens.equals(that.tokens);
     }
 
+    /**
+     * @return combined hash code of all the <i>Token</i>s in the cluster
+     */
     @Override
     public int hashCode() {
         return Objects.hash(tokens);
@@ -26,12 +33,21 @@ class TokenCluster {
 
     /**
      * The TokenCluster class is meant to be immutable upon construction,
-     * so adding of tokens will be done through this builder. You can add Token(s) sequentially in this Builder.
+     * so adding of tokens will and can only be done through this builder. You can add Token(s) sequentially in this Builder.
      */
     static class TokenClusterBuilder{
         private Collection<Token> tokens;
         TokenClusterBuilder(){ this.tokens = new ArrayList<>(); }
+
+        /**
+         * This will bring <b>tok</b> to the end of the cluster
+         * @param tok token to be added to the cluster
+         */
         void addNext(Token tok){ tokens.add(tok); }
+
+        /**
+         * @return a cluster of all the added tokens
+         */
         TokenCluster cluster(){ return new TokenCluster(tokens); }
     }
 

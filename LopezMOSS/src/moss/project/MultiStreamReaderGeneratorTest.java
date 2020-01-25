@@ -10,13 +10,7 @@ import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Collection;
 
-/** 
-* MultiReaderGenerator Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>Jan 24, 2020</pre> 
-* @version 1.0 
-*/ 
+
 public class MultiStreamReaderGeneratorTest {
 
     @Before
@@ -30,7 +24,7 @@ public class MultiStreamReaderGeneratorTest {
     /**
     *
     * Method: generate()
-    *
+    * @throws Exception All thrown exceptions
     */
     @Test
     public void testGenerate() throws Exception {

@@ -15,6 +15,10 @@ import java.util.Collections;
 class MultiStreamReaderGenerator {
     private final byte[] combinedByteArray;
 
+    /**
+     * @param streams Input streams to be combined
+     * @throws IOException Thrown when one input stream fails
+     */
     MultiStreamReaderGenerator(Collection<? extends InputStream> streams) throws IOException {
         SequenceInputStream combinedReaderStream =
                 new SequenceInputStream(Collections.enumeration(streams));
@@ -23,9 +27,13 @@ class MultiStreamReaderGenerator {
         combinedByteArray = byteos.toByteArray();
     }
 
-    /*creates an independent reader to the collection of streams. This means that the generated readers are independent of one another.
-    * but at the same time, it does not distribute any unnecessary copies of the combined streams
-    * */
+    /**
+     *
+     *creates an independent reader to the collection of streams. This means that the generated readers are independent of one another.
+     * but at the same time, it does not distribute any unnecessary copies of the combined streams
+     *
+     * @return Reader generated from combining all the input streams
+     * */
     final Reader generate(){
         return new BufferedReader(
                 new InputStreamReader(

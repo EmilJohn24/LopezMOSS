@@ -9,13 +9,18 @@ import java.nio.file.Path;
 import java.util.Hashtable;
 import java.util.stream.Stream;
 
+/**
+ * [NOT YET FINISHED]
+ * Compares multiple projects pair-wise
+ */
 public class MultiProjectPairComparison {
-    private final Hashtable<Path, ProjectFlatReaderDistributor> readerDistributors;
+    private final Hashtable<Path, ProjectFlatReaderDistributor> readerDistributors; //TODO: Turn into a collection of Project objects
     private final ComparisonStrategy strategy;
 
     /**
-     * @param projectsFolder: path to the folder containing all the projects to be cross-compared
-     * @param globFilter: the specifier for which types of files should be included in the comparison using the UNIX GLOB format
+     * @param projectsFolder Path to the folder containing all the projects to be cross-compared
+     * @param globFilter The specifier for which types of files should be included in the comparison using the UNIX GLOB format
+     * @param strategy Algorithm to be used for comparison
      */
     public MultiProjectPairComparison(Path projectsFolder, String globFilter, ComparisonStrategy strategy) {
         this.strategy = strategy;

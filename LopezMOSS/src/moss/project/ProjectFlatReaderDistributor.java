@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.stream.Stream;
 
+/**
+ * Combines filtered files from a single path to a single reader.
+ */
 public class ProjectFlatReaderDistributor {
     private final MultiStreamReaderGenerator generator;
     static final String CPP_FILTER = "**/*.cpp";
@@ -21,8 +24,8 @@ public class ProjectFlatReaderDistributor {
     /**
      * if an empty string is passed to extension, this will not do any extension filtering
      * the filter uses the GLOB syntax
-     * @param projectPath
-     * @param globFilter
+     * @param projectPath Path to the project
+     * @param globFilter GLOB filter for files to be combined
      */
 
     public ProjectFlatReaderDistributor(Path projectPath, String globFilter) {
@@ -55,6 +58,9 @@ public class ProjectFlatReaderDistributor {
     }
 
 
+    /**
+     * @return A copy of the combined flat reader
+     */
     Reader distribute(){
         return generator.generate();
     }

@@ -64,18 +64,18 @@ class HashingTokenizer {
                 break;
             case StreamTokenizer.TT_NUMBER:
                 //CHANGE: recently changed id for number to the NUMBER constant instead of the integer's hash value
-                tokenBuilder.setTypeValue(Token.TYPE.NUMBER, tokenizer.nval);
+                tokenBuilder.setTypeWithValue(Token.TYPE.NUMBER, tokenizer.nval);
                 break;
             case StreamTokenizer.TT_WORD:
                 //For strings
-                tokenBuilder.setTypeValue(Token.TYPE.WORD, tokenizer.sval);
+                tokenBuilder.setTypeWithValue(Token.TYPE.WORD, tokenizer.sval);
                 break;
 
             default:
                 //extra checks
                 //a quote check here
-                if (tokenNumber == QUOTE) tokenBuilder.setTypeValue(Token.TYPE.STRING_LITERAL, tokenizer.sval);
-                else tokenBuilder.setTypeValue(Token.TYPE.OTHER, tokenNumber);
+                if (tokenNumber == QUOTE) tokenBuilder.setTypeWithValue(Token.TYPE.STRING_LITERAL, tokenizer.sval);
+                else tokenBuilder.setTypeWithValue(Token.TYPE.OTHER, tokenNumber);
                 break;
         }
         return tokenBuilder.setLineNo(tokenizer.lineno()).createToken();

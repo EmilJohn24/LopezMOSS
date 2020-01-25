@@ -8,13 +8,7 @@ import java.io.File;
 import java.io.Reader;
 import java.nio.file.Paths;
 
-/** 
-* ProjectFlatReaderDistributor Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>Jan 24, 2020</pre> 
-* @version 1.0 
-*/ 
+
 public class ProjectFlatReaderDistributorTest { 
 
 @Before
@@ -28,7 +22,7 @@ public void after() throws Exception {
 /** 
 * 
 * Method: distribute() 
-* 
+* @throws Exception All thrown exceptions
 */ 
 @Test
 public void testDistribute() throws Exception { 
