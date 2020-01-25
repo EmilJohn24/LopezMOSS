@@ -46,7 +46,8 @@ class HashingTokenizer {
                 id = EOL;
                 break;
             case StreamTokenizer.TT_NUMBER:
-                id = Integer.hashCode(tokenNumber);
+                //CHANGE: recently changed id for number to the NUMBER constant instead of the integer's hash value
+                id = NUMBER;
                 break;
 
             case StreamTokenizer.TT_WORD:
