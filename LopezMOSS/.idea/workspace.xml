@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c9d7883-4ba3-4ca5-9987-924617f718d6" name="Default Changelist" comment="" />
+    <list default="true" id="1c9d7883-4ba3-4ca5-9987-924617f718d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/TokenCluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/TokenCluster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/TokenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/TokenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/project/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/project/ProjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/ProjectBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/project/ProjectPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/Projects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/project/ProjectPairsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/ProjectsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +38,81 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/project/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="663">
+              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moss/project/Projects.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#95#128#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moss/project/TestObjects.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,20 +121,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/moss/algorithm/Token.java">
+        <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#363#399#0" expanded="true" />
-                <element signature="e#587#649#0" expanded="true" />
-                <element signature="e#602#603#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#1492#1493#0" expanded="true" />
-                <element signature="e#1057#1058#0" expanded="true" />
-                <element signature="e#1096#1097#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -51,98 +132,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="267">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#304#305#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#1273#1274#0" expanded="true" />
-                <element signature="e#1319#1320#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1753">
-              <caret line="108" selection-start-line="108" selection-end-line="108" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenCluster.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#520#521#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-                <element signature="e#1487#1488#0" expanded="true" />
-                <element signature="e#1523#1524#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testfiles/project1/test_program1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -162,11 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/algorithm/LineComparisonStrategy.java" />
-        <option value="$PROJECT_DIR$/test_program1.cpp" />
-        <option value="$PROJECT_DIR$/src/algorithm/TokenBuilder.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/TokenTest.java" />
-        <option value="$PROJECT_DIR$/test_program2.cpp" />
         <option value="$PROJECT_DIR$/src/algorithm/TokenOccurrenceTable.java" />
         <option value="$PROJECT_DIR$/src/algorithm/HashingTokenizer.java" />
         <option value="$PROJECT_DIR$/src/algorithm/Token.java" />
@@ -193,26 +182,31 @@
         <option value="$PROJECT_DIR$/src/moss/projectpairmachine/PairBasedComparison.java" />
         <option value="$PROJECT_DIR$/src/moss/projectpairmachine/ProjectFlatReaderDistributor.java" />
         <option value="$PROJECT_DIR$/src/moss/projectpairmachine/ProjectPairComparator.java" />
-        <option value="$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java" />
-        <option value="$PROJECT_DIR$/src/moss/project/ProjectBuilder.java" />
         <option value="$PROJECT_DIR$/src/moss/algorithm/ComparisonStrategy.java" />
         <option value="$PROJECT_DIR$/src/moss/project/ProjectPairComparator.java" />
-        <option value="$PROJECT_DIR$/src/moss/project/Project.java" />
         <option value="$PROJECT_DIR$/src/test/moss/project/ProjectPairsTest.java" />
         <option value="$PROJECT_DIR$/src/moss/project/TestObjects.java" />
-        <option value="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java" />
         <option value="$PROJECT_DIR$/src/moss/project/ProjectPairsTest.java" />
-        <option value="$PROJECT_DIR$/src/moss/project/ProjectPairs.java" />
         <option value="$PROJECT_DIR$/testfiles/project1/test_program1.cpp" />
         <option value="$PROJECT_DIR$/testfiles/project1/folder1/test_program2.txt" />
         <option value="$PROJECT_DIR$/testfiles/project2/test_program2.txt" />
         <option value="$PROJECT_DIR$/testfiles/project1/test_program1.txt" />
-        <option value="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java" />
-        <option value="$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java" />
-        <option value="$PROJECT_DIR$/src/moss/algorithm/TokenCluster.java" />
-        <option value="$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java" />
         <option value="$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java" />
         <option value="$PROJECT_DIR$/src/moss/algorithm/Token.java" />
+        <option value="$PROJECT_DIR$/src/moss/algorithm/TokenCluster.java" />
+        <option value="$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java" />
+        <option value="$PROJECT_DIR$/src/moss/algorithm/TokenTest.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java" />
+        <option value="$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/Project.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/ProjectBuilder.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/ProjectPairs.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/Projects.java" />
+        <option value="$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/ProjectsTest.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java" />
       </list>
     </option>
   </component>
@@ -228,6 +222,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,8 +291,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,22 +369,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProjectFlatReaderDistributorTest.testDistribute (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LopezMOSS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="moss.project.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="moss.project" />
-      <option name="MAIN_CLASS_NAME" value="moss.project.ProjectFlatReaderDistributorTest" />
-      <option name="METHOD_NAME" value="testDistribute" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProjectFlatReaderDistributorTest.testDistribute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LopezMOSS" />
       <extension name="coverage">
@@ -407,7 +385,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProjectPairsTest.testCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProjectFlatReaderDistributorTest.testDistribute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LopezMOSS" />
       <extension name="coverage">
         <pattern>
@@ -416,7 +394,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="moss.project" />
-      <option name="MAIN_CLASS_NAME" value="moss.project.ProjectPairsTest" />
+      <option name="MAIN_CLASS_NAME" value="moss.project.ProjectFlatReaderDistributorTest" />
+      <option name="METHOD_NAME" value="testDistribute" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectsTest.testCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LopezMOSS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="moss.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="moss.project" />
+      <option name="MAIN_CLASS_NAME" value="moss.project.ProjectsTest" />
       <option name="METHOD_NAME" value="testCompare" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -426,7 +420,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ProjectPairsTest.testCompare" />
+        <item itemvalue="JUnit.ProjectsTest.testCompare" />
         <item itemvalue="JUnit.ProjectFlatReaderDistributorTest.testDistribute (1)" />
         <item itemvalue="JUnit.ProjectFlatReaderDistributorTest.testDistribute" />
         <item itemvalue="JUnit.MultiStreamReaderGeneratorTest.testGenerate" />
@@ -489,8 +483,8 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.18926175" />
-      <window_info id="Structure" order="1" sideWeight="0.50141644" side_tool="true" visible="true" weight="0.18926175" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49716714" visible="true" weight="0.19194631" />
+      <window_info id="Structure" order="1" sideWeight="0.5028329" side_tool="true" visible="true" weight="0.19194631" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -572,16 +566,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testfiles/project1/folder1/test_program2.txt" />
-    <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testfiles/project2/test_program2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -589,34 +573,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectPairsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="35" column="90" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/TestObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_program1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" lean-forward="true" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -634,41 +594,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectPairs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="204">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -679,99 +611,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/Project.java">
+    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/Token.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="539">
+          <caret line="111" column="7" lean-forward="true" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#52#79#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="233">
+          <caret line="45" column="83" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#304#305#0" expanded="true" />
             <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
-            <element signature="e#1319#1320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenCluster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+        <state relative-caret-position="952">
+          <caret line="56" column="45" lean-forward="true" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#520#521#0" expanded="true" />
             <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#1487#1488#0" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java">
+    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1753">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="85">
+          <caret line="5" column="56" lean-forward="true" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/Token.java">
+    <entry file="file://$PROJECT_DIR$/src/moss/project/TestObjects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#363#399#0" expanded="true" />
-            <element signature="e#587#649#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/Projects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#95#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
         </state>
       </provider>
     </entry>
