@@ -5,9 +5,9 @@ import java.io.Reader;
 
 public class TokenHashingStrategy implements ComparisonStrategy {
 
-    private TokenOccurrenceTable table;
+    private TokenClusterOccurrenceTable table;
     public TokenHashingStrategy(){
-        table = new TokenOccurrenceTable();
+        table = new TokenClusterOccurrenceTable();
     }
 
 

@@ -2,43 +2,31 @@ package moss.algorithm;
 
 import java.io.IOException;
 import java.io.Reader;
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 
 @SuppressWarnings("WeakerAccess")
-class TokenOccurrenceTable {
-    private HashMap<Token, Integer> occurrences;
-    private Collection<Token> blackList;
+class TokenClusterOccurrenceTable {
+    private HashMap<TokenCluster, Integer> occurrences;
+    static int DEFAULT_CLUSTER_SIZE = 2;
 
-    TokenOccurrenceTable(){
+    TokenClusterOccurrenceTable(){
         occurrences = new HashMap<>();
-        blackList = new ArrayList<>();
     }
 
-    void ignoreToken(Token tok){
-        blackList.add(tok);
-    }
 
-    boolean isIgnored(Token tok){
-        return blackList.contains(tok);
-    }
 
     //adds the token to the occurrences table. Puts it in if the token has yet to occur
-    private void addOccurredIfNotIgnored(Token tok){
-        if (this.isIgnored(tok)) return;
-        occurrences.putIfAbsent(tok, 0);
-        occurrences.put(tok,
-                occurrences.get(tok) + 1);
+    private void addOccurred(TokenCluster tokenCluster){
+        occurrences.putIfAbsent(tokenCluster, 0);
+        occurrences.put(tokenCluster,
+                occurrences.get(tokenCluster) + 1);
     }
 
     void tabulate(Reader reader) throws IOException {
         HashingTokenizer tokenizer = new HashingTokenizer(reader);
-        Token currentToken;
-        do {
-            currentToken = tokenizer.getNextTokenInfo();
-            this.addOccurredIfNotIgnored(currentToken);
-        } while (!tokenizer.isAtEnd());
+        for (TokenCluster cluster : tokenizer.remainingTokenClusters(DEFAULT_CLUSTER_SIZE)){
+            this.addOccurred(cluster);
+        }
     }
 
 
