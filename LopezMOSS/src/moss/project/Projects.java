@@ -9,6 +9,12 @@ import java.io.IOException;
  */
 @SuppressWarnings("WeakerAccess")
 public final class Projects {
+    static public final String CPP_FILTER = "**/*.cpp";
+    static public final String JAVA_FILTER = "**/*.java";
+    static public final String CPP_AND_JAVA_FILTER = "**/*.{java, cpp, h}";
+    static public final String TXT_FILTER = "**/*.txt";
+    static public final String NO_FILTER = "**/*";
+
     private Projects(){} //cannot be instantiated
     /**
      * Compares two <i>Project</i>s and returns a score from 0.0 to 1.0
@@ -16,10 +22,13 @@ public final class Projects {
      * @param second Second project to be compared
      * @param strategy Algorithm to be used for comparison
      * @return Score for comparison
-     * @throws IOException Thrown if one of the projects could not be read properly
      */
     public static double compare(Project first,
-                                 Project second, ComparisonStrategy strategy) throws IOException {
-        return strategy.compare(first.getConcatenatedReader(), second.getConcatenatedReader());
+                                 Project second, ComparisonStrategy strategy) {
+        try {
+            return strategy.compare(first.getConcatenatedReader(), second.getConcatenatedReader());
+        } catch (IOException e) {
+            return 0.0; //CHANGE: The protocol when a file cannot be read is to just return a score of 0.0
+        }
     }
 }

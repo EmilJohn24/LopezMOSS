@@ -14,8 +14,9 @@ public class ProjectBuilder {
      * Creates a builder for a <i>Project</i>
      * No filter by default
      */
-    ProjectBuilder(){
-        this.globFilter = ProjectFlatReaderDistributor.NO_FILTER;
+    public ProjectBuilder(){
+        //CHANGE: Recently made all methods here public to connect this to other modules
+        this.globFilter = Projects.NO_FILTER;
         this.name = null;
     }
 
@@ -23,7 +24,7 @@ public class ProjectBuilder {
      * @param path Path to the project folder
      * @return A builder for the project to be built
      */
-    ProjectBuilder setPath(Path path) {
+    public ProjectBuilder setPath(Path path) {
         this.path = path;
         return this;
     }
@@ -32,7 +33,7 @@ public class ProjectBuilder {
      * @param name Name of the project
      * @return A builder for the project to be built
      */
-    ProjectBuilder setName(String name) {
+    public ProjectBuilder setName(String name) {
         this.name = name;
         return this;
     }
@@ -49,7 +50,7 @@ public class ProjectBuilder {
     /**
      * @return The project generated with all values set.
      */
-    Project createProject() {
+    public Project createProject() {
         if (name == null) this.name = this.path.getFileName().toString();
         return new Project(path, name, globFilter);
     }

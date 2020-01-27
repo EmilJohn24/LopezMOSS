@@ -12,13 +12,9 @@ import java.util.stream.Stream;
  */
 public class ProjectFlatReaderDistributor {
     private final MultiStreamReaderGenerator generator;
-    static final String CPP_FILTER = "**/*.cpp";
-    static final String JAVA_FILTER = "**/*.java";
-    static final String TXT_FILTER = "**/*.txt";
-    static final String NO_FILTER = "**/*";
 
     public ProjectFlatReaderDistributor(Path projectPath){
-        this(projectPath, ProjectFlatReaderDistributor.NO_FILTER);
+        this(projectPath, Projects.NO_FILTER);
     }
 
     /**

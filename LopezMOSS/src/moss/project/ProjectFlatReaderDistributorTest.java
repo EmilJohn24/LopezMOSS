@@ -4,9 +4,7 @@ import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After;
 
-import java.io.File;
 import java.io.Reader;
-import java.nio.file.Paths;
 
 
 public class ProjectFlatReaderDistributorTest { 
@@ -28,7 +26,7 @@ public void after() throws Exception {
 public void testDistribute() throws Exception { 
 //TODO: Test goes here...
     ProjectFlatReaderDistributor distributor = new ProjectFlatReaderDistributor(TestObjects.TEST_PROJECT_1_PATH,
-            ProjectFlatReaderDistributor.TXT_FILTER);
+            Projects.TXT_FILTER);
     Reader reader = distributor.distribute();
     assert(reader.read() == 'c');
 } 
