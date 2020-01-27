@@ -2,23 +2,115 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c9d7883-4ba3-4ca5-9987-924617f718d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/TokenCluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/TokenCluster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/ComparisonStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/ComparisonStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moss/algorithm/TokenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/algorithm/TokenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moss/project/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moss/project/ProjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/ProjectBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moss/project/ProjectPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/Projects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moss/project/ProjectPairsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/ProjectsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/project/Projects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/Projects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/project/TestObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/TestObjects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/BOMBITA_Module 0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/BayetaExer0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/CHAN-module0.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/CHUAact1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/ChiuPlagiarism.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Enghoy_Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Gabay.0.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/GoMarcModule 0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/HansModule0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/JanGo11812249_Module0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Khow_ACTIVITY 0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Llarenas_Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Lopez_Module0_CodeComparison.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/MODULE 0_Caoile.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Magallanes_Module0_11828668.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Module 0 SABULARSE.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Module 0_Antoc.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Module0-Vasquez.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Module0_CABATO.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Module0_Regacho.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/PanesSimilarityChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Parco_main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Portugal_11815027_Mod0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/ProgramComparison_Megino.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Similarity_Checker_Contreras.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Solis-Checker-Module0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/TeddyMoss.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Toro_Module_0.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/Tupal_Submission.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/VHONG-11814888 - Module 0.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/VicenteMod1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/emerson_src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/malcolm_src/CodeUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/malcolm_src/FileToString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/malcolm_src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/see/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/see/See_Measure of Software Similarity.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submissions/Submissions/semira_M0.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/ComparisonStrategy.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/ComparisonStrategy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/HashingTokenizer.TokenizerEndException.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/HashingTokenizer.TokenizerEndException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/HashingTokenizer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/HashingTokenizer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/Token.TYPE.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/Token.TYPE.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/Token.TokenBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/Token.TokenBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/Token.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/Token.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/TokenCluster.TokenClusterBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/TokenCluster.TokenClusterBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/TokenCluster.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/TokenCluster.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/TokenClusterOccurrenceTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/TokenClusterOccurrenceTable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/TokenHashingStrategy.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/TokenHashingStrategy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/TokenTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/TokenTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/project/MultiStreamReaderGenerator.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/MultiStreamReaderGenerator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/project/MultiStreamReaderGeneratorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/MultiStreamReaderGeneratorTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/project/Project.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/Project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/project/ProjectBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/ProjectBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/project/ProjectFlatReaderDistributor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/ProjectFlatReaderDistributor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/project/ProjectFlatReaderDistributorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/ProjectFlatReaderDistributorTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/project/Projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/Projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/project/ProjectsTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/ProjectsTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/project/TestObjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/TestObjects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/project/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/project/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/project/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/MultiProjectPairComparison.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/MultiProjectPairComparison.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/package-tree.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/project/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+            <state relative-caret-position="272">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            <state relative-caret-position="17">
+              <caret line="17" column="88" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -59,8 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="153">
+              <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -68,51 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/project/Projects.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#95#128#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/project/TestObjects.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,10 +170,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java">
+        <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+            <state relative-caret-position="318">
+              <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparisonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moss/algorithm/ComparisonStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="56" lean-forward="true" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -132,8 +229,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,6 +244,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -156,9 +254,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/algorithm/TokenOccurrenceTable.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/HashingTokenizer.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/Token.java" />
         <option value="$PROJECT_DIR$/src/moss/algorithm/LineComparisonStrategy.java" />
         <option value="$PROJECT_DIR$/src/moss/pairmachine/PairBasedComparison.java" />
         <option value="$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategu.java" />
@@ -182,31 +277,34 @@
         <option value="$PROJECT_DIR$/src/moss/projectpairmachine/PairBasedComparison.java" />
         <option value="$PROJECT_DIR$/src/moss/projectpairmachine/ProjectFlatReaderDistributor.java" />
         <option value="$PROJECT_DIR$/src/moss/projectpairmachine/ProjectPairComparator.java" />
-        <option value="$PROJECT_DIR$/src/moss/algorithm/ComparisonStrategy.java" />
         <option value="$PROJECT_DIR$/src/moss/project/ProjectPairComparator.java" />
         <option value="$PROJECT_DIR$/src/test/moss/project/ProjectPairsTest.java" />
-        <option value="$PROJECT_DIR$/src/moss/project/TestObjects.java" />
         <option value="$PROJECT_DIR$/src/moss/project/ProjectPairsTest.java" />
         <option value="$PROJECT_DIR$/testfiles/project1/test_program1.cpp" />
         <option value="$PROJECT_DIR$/testfiles/project1/folder1/test_program2.txt" />
         <option value="$PROJECT_DIR$/testfiles/project2/test_program2.txt" />
         <option value="$PROJECT_DIR$/testfiles/project1/test_program1.txt" />
-        <option value="$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java" />
         <option value="$PROJECT_DIR$/src/moss/algorithm/Token.java" />
         <option value="$PROJECT_DIR$/src/moss/algorithm/TokenCluster.java" />
         <option value="$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java" />
         <option value="$PROJECT_DIR$/src/moss/algorithm/TokenTest.java" />
         <option value="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java" />
-        <option value="$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java" />
         <option value="$PROJECT_DIR$/src/moss/project/Project.java" />
-        <option value="$PROJECT_DIR$/src/moss/project/ProjectBuilder.java" />
         <option value="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java" />
         <option value="$PROJECT_DIR$/src/moss/project/ProjectPairs.java" />
-        <option value="$PROJECT_DIR$/src/moss/project/Projects.java" />
-        <option value="$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java" />
         <option value="$PROJECT_DIR$/src/moss/project/ProjectsTest.java" />
         <option value="$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java" />
         <option value="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/ProjectBuilder.java" />
+        <option value="$PROJECT_DIR$/src/moss/algorithm/ComparisonStrategy.java" />
+        <option value="$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java" />
+        <option value="$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectTest.java" />
+        <option value="$PROJECT_DIR$/tests/moss/projectpairmachine/MultiProjectPairComparisonTest.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/TestObjects.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/Projects.java" />
+        <option value="$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparisonTest.java" />
+        <option value="$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java" />
       </list>
     </option>
   </component>
@@ -222,7 +320,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -266,31 +363,19 @@
             <path>
               <item name="LopezMOSS" type="b2602c69:ProjectViewProjectNode" />
               <item name="LopezMOSS" type="462c0819:PsiDirectoryNode" />
-              <item name="testfiles" type="462c0819:PsiDirectoryNode" />
+              <item name="test_submissions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LopezMOSS" type="b2602c69:ProjectViewProjectNode" />
               <item name="LopezMOSS" type="462c0819:PsiDirectoryNode" />
-              <item name="testfiles" type="462c0819:PsiDirectoryNode" />
-              <item name="project1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LopezMOSS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LopezMOSS" type="462c0819:PsiDirectoryNode" />
-              <item name="testfiles" type="462c0819:PsiDirectoryNode" />
-              <item name="project1" type="462c0819:PsiDirectoryNode" />
-              <item name="folder1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LopezMOSS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LopezMOSS" type="462c0819:PsiDirectoryNode" />
-              <item name="testfiles" type="462c0819:PsiDirectoryNode" />
-              <item name="project2" type="462c0819:PsiDirectoryNode" />
+              <item name="test_submissions" type="462c0819:PsiDirectoryNode" />
+              <item name="Submissions" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,8 +384,9 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/testfiles/project2" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -310,6 +396,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -317,13 +404,8 @@
       <recent name="algorithm" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="moss.project.Projects" />
       <recent name="moss.algorithm.Token" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ACER\LopezMOSS\LopezMOSS\testfiles\project1\folder1" />
-      <recent name="C:\Users\ACER\Module0_CodeComparison\Module0_CodeComparison" />
-      <recent name="C:\Users\ACER\Module0_CodeComparison\\" />
-      <recent name="C:\Users\11816600\IdeaProjects\Module0_CodeComparison" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="moss.projectpairmachine" />
@@ -331,6 +413,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ACER\LopezMOSS\LopezMOSS\testfiles\project2" />
       <recent name="C:\Users\ACER\LopezMOSS\LopezMOSS\testfiles\project1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\LopezMOSS\LopezMOSS\testfiles\project1\folder1" />
+      <recent name="C:\Users\ACER\Module0_CodeComparison\Module0_CodeComparison" />
+      <recent name="C:\Users\ACER\Module0_CodeComparison\\" />
+      <recent name="C:\Users\11816600\IdeaProjects\Module0_CodeComparison" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -345,10 +433,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.MultiProjectPairComparisonTest.module0SubmissionsTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="LopezMOSS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiProjectPairComparisonTest.module0SubmissionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LopezMOSS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="moss.projectpairmachine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="moss.projectpairmachine" />
+      <option name="MAIN_CLASS_NAME" value="moss.projectpairmachine.MultiProjectPairComparisonTest" />
+      <option name="METHOD_NAME" value="module0SubmissionsTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -419,9 +523,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MultiProjectPairComparisonTest.module0SubmissionsTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ProjectsTest.testCompare" />
-        <item itemvalue="JUnit.ProjectFlatReaderDistributorTest.testDistribute (1)" />
         <item itemvalue="JUnit.ProjectFlatReaderDistributorTest.testDistribute" />
         <item itemvalue="JUnit.MultiStreamReaderGeneratorTest.testGenerate" />
       </list>
@@ -449,21 +553,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProjectPairsTest_testCompare - 2020.01.24 at 18h 08m 31s.xml">
-      <configuration name="ProjectPairsTest.testCompare" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProjectFlatReaderDistributorTest_testDistribute_(1) - 2020.01.25 at 00h 47m 17s.xml">
-      <configuration name="ProjectFlatReaderDistributorTest.testDistribute (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProjectPairsTest_testCompare - 2020.01.25 at 00h 47m 36s.xml">
-      <configuration name="ProjectPairsTest.testCompare" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProjectPairsTest_testCompare - 2020.01.25 at 00h 49m 12s.xml">
-      <configuration name="ProjectPairsTest.testCompare" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProjectPairsTest_testCompare - 2020.01.25 at 00h 49m 26s.xml">
-      <configuration name="ProjectPairsTest.testCompare" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProjectPairsTest_testCompare - 2020.01.25 at 00h 52m 02s.xml">
       <configuration name="ProjectPairsTest.testCompare" configurationId="JUnit" />
     </history-entry>
@@ -479,12 +568,27 @@
     <history-entry file="ProjectPairsTest_testCompare - 2020.01.25 at 00h 53m 06s.xml">
       <configuration name="ProjectPairsTest.testCompare" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MultiProjectPairComparisonTest_module0SubmissionsTest - 2020.01.27 at 11h 38m 27s.xml">
+      <configuration name="MultiProjectPairComparisonTest.module0SubmissionsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiProjectPairComparisonTest_module0SubmissionsTest - 2020.01.27 at 11h 40m 20s.xml">
+      <configuration name="MultiProjectPairComparisonTest.module0SubmissionsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiProjectPairComparisonTest_module0SubmissionsTest - 2020.01.27 at 11h 41m 19s.xml">
+      <configuration name="MultiProjectPairComparisonTest.module0SubmissionsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiProjectPairComparisonTest_module0SubmissionsTest - 2020.01.27 at 11h 41m 43s.xml">
+      <configuration name="MultiProjectPairComparisonTest.module0SubmissionsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiProjectPairComparisonTest_module0SubmissionsTest - 2020.01.27 at 11h 41m 47s.xml">
+      <configuration name="MultiProjectPairComparisonTest.module0SubmissionsTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49716714" visible="true" weight="0.19194631" />
-      <window_info id="Structure" order="1" sideWeight="0.5028329" side_tool="true" visible="true" weight="0.19194631" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957507" visible="true" weight="0.19463088" />
+      <window_info id="Structure" order="1" sideWeight="0.5042493" side_tool="true" visible="true" weight="0.19463088" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -493,7 +597,7 @@
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23087819" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.59773374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -517,6 +621,36 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CHANGE: recently changed id for number to the NUMBER constant instead of the integer's hash value" />
     <option name="LAST_COMMIT_MESSAGE" value="CHANGE: recently changed id for number to the NUMBER constant instead of the integer's hash value" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparisonTest.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparisonTest.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LopezMOSS$MultiStreamReaderGeneratorTest_testGenerate.ic" NAME="MultiStreamReaderGeneratorTest.testGenerate Coverage Results" MODIFIED="1579849432023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -555,16 +689,6 @@
     <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/ProjectFlatReaderDistributor.java" />
     <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/ProjectFlatReaderDistributorTest.java" />
     <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/ProjectPairComparator.java" />
-    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/ComparisonStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testfiles/project1/folder1/test_program2.txt" />
     <entry file="file://$PROJECT_DIR$/testfiles/project2/test_program2.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -594,44 +718,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testfiles/project1/test_program1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="111" column="7" lean-forward="true" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
-          <folding>
-            <element signature="e#52#79#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="45" column="83" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -642,10 +732,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java">
+    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/TestObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#100#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="111" column="7" lean-forward="true" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="45" column="83" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -654,12 +790,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenCluster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
+        <state relative-caret-position="918">
           <caret line="56" column="45" lean-forward="true" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/ComparisonStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -673,18 +827,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenHashingStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/TestObjects.java">
+    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="17">
+          <caret line="17" column="88" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -693,22 +854,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="153">
+          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/moss/project/Projects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        <state relative-caret-position="306">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/Project.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+        <state relative-caret-position="289">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparisonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -717,43 +891,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectPairComparison.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="318">
+          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/Projects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#95#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
         </state>
       </provider>
     </entry>
