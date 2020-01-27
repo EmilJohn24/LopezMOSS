@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74b0a3e6-3b39-4b4c-9d06-f935f9c47a47" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WhWceH9SNIemIQBm2ISzsXQdi7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Module0Vasquez">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="HelloWorld" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Module0Vasquez" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Module0Vasquez" />
+      <module name="HelloWorld" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Module0Vasquez" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Module0Vasquez" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74b0a3e6-3b39-4b4c-9d06-f935f9c47a47" name="Default Changelist" comment="" />
+      <created>1579602389157</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579602389157</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1489" height="216" key="GridCell.Tab.0.bottom" timestamp="1579605614167">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state width="1489" height="216" key="GridCell.Tab.0.bottom/65.24.1535.876@65.24.1535.876" timestamp="1579605614167" />
+    <state width="1489" height="216" key="GridCell.Tab.0.center" timestamp="1579605614166">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state width="1489" height="216" key="GridCell.Tab.0.center/65.24.1535.876@65.24.1535.876" timestamp="1579605614166" />
+    <state width="1489" height="216" key="GridCell.Tab.0.left" timestamp="1579605614166">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state width="1489" height="216" key="GridCell.Tab.0.left/65.24.1535.876@65.24.1535.876" timestamp="1579605614166" />
+    <state width="1489" height="216" key="GridCell.Tab.0.right" timestamp="1579605614167">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state width="1489" height="216" key="GridCell.Tab.0.right/65.24.1535.876@65.24.1535.876" timestamp="1579605614167" />
+    <state x="488" y="337" key="com.intellij.ide.util.TipDialog" timestamp="1579602399983">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state x="488" y="337" key="com.intellij.ide.util.TipDialog/65.24.1535.876@65.24.1535.876" timestamp="1579602399983" />
+    <state x="282" y="221" width="672" height="678" key="search.everywhere.popup" timestamp="1579604617894">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state x="282" y="221" width="672" height="678" key="search.everywhere.popup/65.24.1535.876@65.24.1535.876" timestamp="1579604617894" />
+  </component>
+</project>
