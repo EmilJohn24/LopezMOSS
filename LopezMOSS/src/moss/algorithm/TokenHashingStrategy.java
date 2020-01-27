@@ -9,15 +9,13 @@ import java.io.Reader;
  */
 public class TokenHashingStrategy implements ComparisonStrategy {
 
-    private TokenClusterOccurrenceTable table;
 
-    @Deprecated
     /**
-     * @deprecated There is a plan to just leave construction to a static class to make explicit that this can only be used once.
-     * creates an instance of this strategy
+     * [CHANGE] Deprecation notice has been removed. The strategy for all such instances of a ComparisonStrategy
+     * is that they should be contractually obligated to have a state of reusability after use
      */
     public TokenHashingStrategy(){
-        table = new TokenClusterOccurrenceTable();
+
     }
 
 
@@ -30,6 +28,8 @@ public class TokenHashingStrategy implements ComparisonStrategy {
     //returns a score between 0.0 and 1.0
     @Override
     public Double compare(Reader str1, Reader str2) throws IOException {
+        //CHANGE: The token cluster tables have been converted to a local variable to allow reusability of this class
+        TokenClusterOccurrenceTable table = new TokenClusterOccurrenceTable();
         table.tabulate(str1);
         table.tabulate(str2);
         return (double) table.collisionCount() / (double) table.total();
