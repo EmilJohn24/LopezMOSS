@@ -27,7 +27,7 @@ public class MultiProjectPairComparisonTest {
         for (Map.Entry<Project, Hashtable<Project, Double>> comparison : comparisons.entrySet()){
             System.out.print(comparison.getKey().getName());
             for (Double score : comparison.getValue().values()){
-                System.out.print(" " + score.floatValue());
+                System.out.printf("\t%.4f", score.floatValue());
             }
             System.out.println();
         }
