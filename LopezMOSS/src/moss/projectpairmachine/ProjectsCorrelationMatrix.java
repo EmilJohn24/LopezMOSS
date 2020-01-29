@@ -135,7 +135,8 @@ final class ProjectsCorrelationMatrix implements Iterable<ProjectsCorrelationMat
      * Helps build the matrix containing comparison results
      */
     static class ProjectsCorrelationMatrixBuilder {
-        private HashMap<Project, ResultSet> resultTable = new HashMap<>();
+        //I have made explicit use of a linked hash map here because it maintains the order things were put in
+        private LinkedHashMap<Project, ResultSet> resultTable = new LinkedHashMap<>();
 
         /**
          * @return The matrix built from the added results
