@@ -31,4 +31,6 @@ public final class Projects {
             return 0.0; //CHANGE: The protocol when a file cannot be read is to just return a score of 0.0
         }
     }
+
+
 }
