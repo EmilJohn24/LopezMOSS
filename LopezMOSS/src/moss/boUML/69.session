@@ -1,0 +1,8 @@
+window_sizes 1800 901 450 1344 719 128
+
+show_stereotypes
+selected 
+  package_ref 129 // boUML
+open
+end
+end
