@@ -9,11 +9,6 @@ import java.io.IOException;
  */
 @SuppressWarnings("WeakerAccess")
 public final class Projects {
-    static public final String CPP_FILTER = "**/*.cpp";
-    static public final String JAVA_FILTER = "**/*.java";
-    static public final String CPP_AND_JAVA_FILTER = "**/*.{java, cpp, h}";
-    static public final String TXT_FILTER = "**/*.txt";
-    static public final String NO_FILTER = "**/*";
 
     private Projects(){} //cannot be instantiated
     /**

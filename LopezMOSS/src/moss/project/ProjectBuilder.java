@@ -5,10 +5,11 @@ import java.nio.file.Path;
 /**
  * Builds <i>Project</i> objects.
  */
+@SuppressWarnings("ALL")
 public class ProjectBuilder {
     private Path path;
     private String name;
-    private String globFilter;
+    private PathFilter filter;
 
     /**
      * Creates a builder for a <i>Project</i>
@@ -16,7 +17,7 @@ public class ProjectBuilder {
      */
     public ProjectBuilder(){
         //CHANGE: Recently made all methods here public to connect this to other modules
-        this.globFilter = Projects.NO_FILTER;
+        this.filter = PathFilter.NO_FILTER;
         this.name = null;
     }
 
@@ -39,11 +40,11 @@ public class ProjectBuilder {
     }
 
     /**
-     * @param globFilter Text filter for the files that can be accessed from the project in GLOB format.
+     * @param filter Text filter for the files that can be accessed from the project in GLOB format.
      * @return A builder for the project to be built
      */
-    public ProjectBuilder setGlobFilter(String globFilter) {
-        this.globFilter = globFilter;
+    public ProjectBuilder setFilter(PathFilter filter) {
+        this.filter = filter;
         return this;
     }
 
@@ -52,6 +53,6 @@ public class ProjectBuilder {
      */
     public Project createProject() {
         if (name == null) this.name = this.path.getFileName().toString();
-        return new Project(path, name, globFilter);
+        return new Project(path, name, filter);
     }
 }

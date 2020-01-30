@@ -17,7 +17,7 @@ public class Project {
      * @param name Name of the project folder
      * @param globFilter The GLOB-formatted filter text used to pick which files can be accessed from this object
      */
-    Project(Path path, String name, String globFilter){
+    Project(Path path, String name, PathFilter globFilter){
         this.name = name;
         this.path = path;
         readerDistributor = new ProjectFlatReaderDistributor(this.path, globFilter);

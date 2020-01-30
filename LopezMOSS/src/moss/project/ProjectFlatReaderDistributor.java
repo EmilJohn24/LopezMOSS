@@ -14,7 +14,7 @@ public class ProjectFlatReaderDistributor {
     private final MultiStreamReaderGenerator generator;
 
     public ProjectFlatReaderDistributor(Path projectPath){
-        this(projectPath, Projects.NO_FILTER);
+        this(projectPath, PathFilter.NO_FILTER);
     }
 
     /**
@@ -23,16 +23,14 @@ public class ProjectFlatReaderDistributor {
      * @param projectPath Path to the project
      * @param globFilter GLOB filter for files to be combined
      */
-
-    public ProjectFlatReaderDistributor(Path projectPath, String globFilter) {
+    public ProjectFlatReaderDistributor(Path projectPath, PathFilter globFilter) {
         MultiStreamReaderGenerator generatorTmp;
-        PathMatcher globMatcher = FileSystems.getDefault().getPathMatcher("glob:" + globFilter);
         Collection<InputStream> inputFileStreams = new ArrayList<>();
 
         try(Stream<Path> paths = Files.walk(projectPath)) {
             paths
                     .filter(Files::isRegularFile)
-                    .filter(globMatcher::matches)
+                    .filter(globFilter::matchesAll)
                     .forEach(path -> {
                         try {
                             inputFileStreams.add(Files.newInputStream(path));

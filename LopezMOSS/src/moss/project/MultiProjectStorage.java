@@ -29,11 +29,11 @@ public class MultiProjectStorage implements Iterable<Project>{
     /**
      * Takes projects from the subdirectories of a path and stores them
      * @param projectsFolder Folder that contains the projects
-     * @param globFilter GLOB-based filter for files
+     * @param filter Path filter for files
      * @return An iterable storage
      */
-    public static MultiProjectStorage projectsIn(Path projectsFolder, String globFilter){
-        return new MultiProjectStorage(projectsFolder, globFilter);
+    public static MultiProjectStorage projectsIn(Path projectsFolder, PathFilter filter){
+        return new MultiProjectStorage(projectsFolder, filter);
     }
 
     /**
@@ -55,9 +55,9 @@ public class MultiProjectStorage implements Iterable<Project>{
 
     /**
      * @param projectsFolder Folder containing projects to be stored
-     * @param globFilter Filter for particular types of files
+     * @param filter Filter for particular types of files
      */
-    private MultiProjectStorage(Path projectsFolder, String globFilter){
+    private MultiProjectStorage(Path projectsFolder, PathFilter filter){
         projects = new ArrayList<>();
 
         try (Stream<Path> projectPath = Files.list(projectsFolder)) {
@@ -67,7 +67,7 @@ public class MultiProjectStorage implements Iterable<Project>{
                         ProjectBuilder projectBuilder = new ProjectBuilder();
                         projects.add(projectBuilder
                                 .setPath(path)
-                                .setGlobFilter(globFilter)
+                                .setFilter(filter)
                                 .createProject());
                     });
         } catch (IOException e) {
