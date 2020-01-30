@@ -1,6 +1,6 @@
 format 222
 "project" // project
-  revision 1
+  revision 2
   modified_by 69 "ACER"
   // class settings
   
@@ -817,15 +817,6 @@ Compares two <i>Project</i>s and returns a score from 0.0 to 1.0
 	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
 	    classrelation_ref 140357 // <unidirectional association>
-	  b parent class_ref 140869 // Projects
-      end
-
-      classrelation 140485 // <unidirectional association>
-	relation 140485 --->
-	  a role_name "" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
-"
-	    classrelation_ref 140485 // <unidirectional association>
 	  b parent class_ref 140869 // Projects
       end
 

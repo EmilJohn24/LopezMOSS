@@ -1,6 +1,6 @@
 format 222
 "boUML"
-  revision 2
+  revision 3
   modified_by 69 "ACER"
 
 
@@ -46,7 +46,7 @@ format 222
   
   java_package "moss"
   ncouples 1
-  key "html dir" value "C:\\Users\\ACER\\LopezMOSS\\docs\\uml\\html/"
+  key "html dir" value "C:\\Users\\ACER\\LopezMOSS\\docs\\uml\\object/"
   package_ref 134853 // unknown
 
   package_ref 135237 // algorithm
@@ -76,13 +76,109 @@ format 222
     activitydiagramsettings
      end
     classdiagram 135365 "OverallClass"
-      classdiagramsettings member_max_width 0 end
+      classdiagramsettings draw_all_relations no member_max_width 0 end
       size A0
     end
 
     objectdiagram 135493 "Objects"
       objectdiagramsettings end
       size A4
+    end
+
+    activity 128069 "DataFlowDiagram"
+      activitydiagram 142021 "Diagram"
+	activitydiagramsettings
+	 end
+	size A4
+      end
+    end
+
+    classinstance 128069 ""
+      type class_ref 139973 // MultiProjectStorage
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128197 ""
+      type class_ref 140101 // Project
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128325 ""
+      type class_ref 140229 // MultiStreamReaderGenerator
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128453 ""
+      type class_ref 140485 // ProjectFlatReaderDistributor
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128581 ""
+      type class_ref 140613 // ProjectBuilder
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128709 ""
+      type class_ref 140613 // ProjectBuilder
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128837 ""
+      type class_ref 139077 // TokenCluster
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 128965 ""
+      type class_ref 138949 // Token
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 129093 ""
+      type class_ref 139589 // TokenClusterOccurrenceTable
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 129221 ""
+      type class_ref 141381 // ProjectsCorrelationMatrix
+      attributes
+        end
+      relations
+        end
+    end
+
+    classinstance 129349 ""
+      type class_ref 141509 // ResultRow
+      attributes
+        end
+      relations
+        end
     end
   end
 end
