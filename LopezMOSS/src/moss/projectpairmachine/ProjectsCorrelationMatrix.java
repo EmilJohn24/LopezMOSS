@@ -5,10 +5,6 @@ import moss.project.Project;
 import java.util.*;
 
 /**
- * @apiNote It might be reasonable that this class be moved inside an abstract multi-comparison class or
-            a multi-comparison interface because its existence is intertwined with comparison
- * @apiNote It is also reasonable to create a separate builder for
-            this class to give better immutability than package-private methods
  * Contains results for multi-project comparisons
  */
 final class ProjectsCorrelationMatrix implements Iterable<ProjectsCorrelationMatrix.ResultRow> {
@@ -64,8 +60,6 @@ final class ProjectsCorrelationMatrix implements Iterable<ProjectsCorrelationMat
     }
 
     /**
-     * @apiNote A static builder might be necessary for result sets to prevent adding after it has been built
-                even within the correlation matrix class
      * Contains the results of a single project against all projects
      */
     static final class ResultSet implements Iterable<ResultSet.ResultRecord> {
