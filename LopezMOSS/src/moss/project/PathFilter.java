@@ -8,6 +8,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
+/**
+ * Used for filtering paths
+ */
 @SuppressWarnings("WeakerAccess")
 public final class PathFilter {
 
