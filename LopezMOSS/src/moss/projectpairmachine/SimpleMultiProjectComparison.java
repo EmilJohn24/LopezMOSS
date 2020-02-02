@@ -12,12 +12,23 @@ import java.util.stream.Stream;
 /**
  * Compares multiple projects pair-wise
  */
-final class SimpleMultiProjectComparison implements MultiProjectComparison {
+public final class SimpleMultiProjectComparison implements MultiProjectComparison {
+    //CHANGE: Changed to public so that other classes can make use of this
     /*
     TODO: Issues with the new refactor:
       1. With the new abstractions, the matrix is, for some reason, not entirely symmetrical
      */
     private final ComparisonStrategy strategy;
+
+    /**
+     * @param strategy Algorithm to be used for comparison
+     * @return A comparison device for comparing projects with the given strategy
+     */
+    public static SimpleMultiProjectComparison fromStrategy(ComparisonStrategy strategy){
+        //The static class will serve as the only way to make this class.
+        //TODO: Since this class is stateless, consider using a hashtable to map strategies to already-built classes
+        return new SimpleMultiProjectComparison(strategy);
+    }
 
     /**
      * @param strategy Algorithm to be used for comparison

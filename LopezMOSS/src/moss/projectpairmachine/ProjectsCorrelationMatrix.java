@@ -7,7 +7,9 @@ import java.util.*;
 /**
  * Contains results for multi-project comparisons
  */
-final class ProjectsCorrelationMatrix implements Iterable<ProjectsCorrelationMatrix.ResultRow> {
+public final class ProjectsCorrelationMatrix implements Iterable<ProjectsCorrelationMatrix.ResultRow> {
+    //CHANGE: changed class from package-private to public because the data needs to be accessible everywhere in the program.
+    //The only real restriction is that this should only be constructable within the package
     private final Collection<ResultRow> rows;
 
     private ProjectsCorrelationMatrix(Collection<ResultRow> rows){
