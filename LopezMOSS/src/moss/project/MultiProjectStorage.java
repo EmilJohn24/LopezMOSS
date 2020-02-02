@@ -1,5 +1,9 @@
 package moss.project;
 
+import com.sun.org.apache.xpath.internal.operations.Mult;
+
+import javax.annotation.Nullable;
+import javax.validation.constraints.NotNull;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -22,7 +26,7 @@ public class MultiProjectStorage implements Iterable<Project>{
      * @return An iterator for all the contained projects
      */
     @Override
-    public Iterator<Project> iterator() {
+    public final Iterator<Project> iterator() {
         return projects.iterator();
     }
 
@@ -43,6 +47,29 @@ public class MultiProjectStorage implements Iterable<Project>{
      */
     public static MultiProjectStorage fromCollection(Collection<Project> projects){
         return new MultiProjectStorage(projects);
+    }
+
+    /**
+     * @param projectPaths Collection of paths to each project to be added
+     * @return Storage for project objects for every path in the collection
+     */
+    public static MultiProjectStorage fromPathCollection(Collection<Path> projectPaths, PathFilter filters){
+        return new MultiProjectStorage(projectPaths, filters);
+    }
+
+
+    /**
+     * @param projectPaths Collection of paths to each project to be added
+     */
+    private MultiProjectStorage(Collection<Path> projectPaths, PathFilter filters){
+        this.projects = new ArrayList<>();
+        for (Path projectPath : projectPaths){
+            ProjectBuilder projectBuilder = new ProjectBuilder();
+            projects.add(projectBuilder
+                    .setPath(projectPath)
+                    .setFilter(filters)
+                    .createProject());
+        }
     }
 
     /**
