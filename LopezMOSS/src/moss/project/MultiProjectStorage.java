@@ -64,6 +64,7 @@ public class MultiProjectStorage implements Iterable<Project>{
     private MultiProjectStorage(Collection<Path> projectPaths, PathFilter filters){
         this.projects = new ArrayList<>();
         for (Path projectPath : projectPaths){
+            //TODO: This is precisely the same snippet of code as the one from the other constructor. Consider code extraction
             ProjectBuilder projectBuilder = new ProjectBuilder();
             projects.add(projectBuilder
                     .setPath(projectPath)
