@@ -1,4 +1,9 @@
 package moss.gui.MultiProjectMenu;
 
-public class MultiProjectMenuView {
+import com.airhacks.afterburner.views.FXMLView;
+
+/**
+ * View for the multi-project menu
+ */
+public class MultiProjectMenuView extends FXMLView {
 }
