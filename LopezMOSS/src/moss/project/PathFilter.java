@@ -13,6 +13,7 @@ import java.util.Collection;
  */
 @SuppressWarnings("WeakerAccess")
 public final class PathFilter {
+    //CHANGE: Made class immutable and created builder to mediate immutability
 
 
     static public final PathFilter CPP_FILTER = new PathFilter(Type.GLOB, "**/*.cpp");
@@ -21,7 +22,8 @@ public final class PathFilter {
     static public final PathFilter TXT_FILTER = new PathFilter(Type.GLOB,"**/*.txt");
     static public final PathFilter NO_FILTER = new PathFilter(Type.GLOB,"**/*");
 
-    enum Type{
+    public enum Type{
+        //CHANGE: Made Type enum public
         REGEX("regex"), GLOB("glob");
 
         String filterNameID;
@@ -44,8 +46,8 @@ public final class PathFilter {
         String getFilterTypeIdentifier(){return filterNameID;}
     }
 
-    private Type filterType;
-    private Collection<String> filters;
+    private final Type filterType;
+    private final Collection<String> filters;
 
     /**
      * @param path Path to be matched
@@ -60,39 +62,63 @@ public final class PathFilter {
         return matches;
     }
 
+    public static class PathFilterBuilder {
+        private Collection<String> filters = new ArrayList<>();
+        private Type filterType;
+        /**
+         * @param filters Filters to be added
+         */
+        public PathFilterBuilder addAllFilters(Collection<String> filters) {
+            this.filters.addAll(filters);
+            return this;
 
-    /**
-     * @param filters Filters to be added
-     */
-    public final void addAllFilters(Collection<String> filters){
-        this.filters.addAll(filters);
+        }
+
+        /**
+         * @param filter Filter text to be added
+         */
+        public PathFilterBuilder addFilter(String filter) {
+            filters.add(filter);
+            return this;
+        }
+
+        /**
+         * @param filter Filter to be removed
+         */
+        public PathFilterBuilder removeFilter(String filter) {
+            filters.remove(filter);
+            return this;
+        }
+
+        /**
+         * @param filters All filters to be removed
+         */
+        public PathFilterBuilder removeAllFilters(Collection<String> filters) {
+            this.filters.removeAll(filters);
+            return this;
+        }
+
+        /**
+         * @param filterType Filter type of path filter
+         */
+        public PathFilterBuilder setFilterType(Type filterType) {
+            this.filterType = filterType;
+            return this;
+        }
+
+        public PathFilter createFilter(){
+            return new PathFilter(filterType, filters);
+        }
     }
 
-    /**
-     * @param filter Filter text to be added
-     */
-    public final void addFilter(String filter){
-        filters.add(filter);
-    }
 
-    /**
-     * @param filter Filter to be removed
-     */
-    public final void removeFilter(String filter){
-        filters.remove(filter);
-    }
-
-    /**
-     * @param filters All filters to be removed
-     */
-    public final void removeAllFilters(Collection<String> filters){
-        this.filters.removeAll(filters);
-    }
-
-
-
-    public PathFilter(Type filterType, String... initialFilters){
+    private PathFilter(Type filterType, String... initialFilters){
         this.filterType = filterType;
         this.filters = Arrays.asList(initialFilters);
+    }
+
+    private PathFilter(Type filterType, Collection<String> initialFilters){
+        this.filterType = filterType;
+        this.filters = new ArrayList<>(initialFilters);
     }
 }
