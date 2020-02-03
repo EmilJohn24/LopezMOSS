@@ -36,7 +36,8 @@ public final class ProjectsCorrelationMatrix implements Iterable<ProjectsCorrela
     /**
      * Holds information on the compared project and results for a single row of comparison
      */
-    static final class ResultRow{
+    static public final class ResultRow{
+        //CHANGE: Changed to public to allow results to be referenced everywhere
         private final Project rowProject;
         private final ResultSet results;
 
@@ -64,7 +65,8 @@ public final class ProjectsCorrelationMatrix implements Iterable<ProjectsCorrela
     /**
      * Contains the results of a single project against all projects
      */
-    static final class ResultSet implements Iterable<ResultSet.ResultRecord> {
+    static public final class ResultSet implements Iterable<ResultSet.ResultRecord> {
+        //CHANGE: Changed to public to allow objects to be referenced everywhere
         //this class does not know about the existence of the project every other project here was compared to.
         //this is knowledge that the instantiator of the correlation matrix must track himself
         private Collection<ResultRecord> results = new ArrayList<>();
@@ -107,7 +109,8 @@ public final class ProjectsCorrelationMatrix implements Iterable<ProjectsCorrela
         /**
          * Contains a single result of a comparison.
          */
-        static final class ResultRecord {
+        static public final class ResultRecord {
+            //CHANGE: Changed to public to allow referencing everywhere
             private final Project projectComparedAgainst;
             private final double score;
 

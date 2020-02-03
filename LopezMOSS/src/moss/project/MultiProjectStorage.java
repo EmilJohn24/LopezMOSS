@@ -21,6 +21,12 @@ public class MultiProjectStorage implements Iterable<Project>{
 
     final private Collection<Project> projects;
 
+    /**
+     * @return Number of projects stored
+     */
+    public int projectCount(){
+        return projects.size();
+    }
 
     /**
      * @return An iterator for all the contained projects
