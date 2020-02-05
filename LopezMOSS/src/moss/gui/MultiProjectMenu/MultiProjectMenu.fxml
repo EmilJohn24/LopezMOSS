@@ -28,18 +28,23 @@
           </Tab>
           <Tab text="Separate Projects">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="includedProjectsListView" layoutX="45.0" layoutY="68.0" prefHeight="155.0" prefWidth="296.0" />
+                        <Button fx:id="addProjectButton" layoutX="45.0" layoutY="26.0" mnemonicParsing="false" text="Add Project..." />
+                        <Button fx:id="compareSeparateButton" layoutX="371.0" layoutY="183.0" mnemonicParsing="false" text="Compare" />
+                     </children></AnchorPane>
             </content>
           </Tab>
         </tabs>
       </TabPane>
-      <ListView fx:id="filterListView" layoutX="585.0" layoutY="168.0" prefHeight="170.0" prefWidth="200.0" />
-      <RadioButton fx:id="regexRadio" layoutX="675.0" layoutY="95.0" mnemonicParsing="false" text="REGEX">
+      <ListView fx:id="filterListView" layoutX="589.0" layoutY="200.0" prefHeight="170.0" prefWidth="200.0" />
+      <RadioButton fx:id="regexRadio" layoutX="689.0" layoutY="102.0" mnemonicParsing="false" text="REGEX">
          <toggleGroup>
             <ToggleGroup fx:id="filterType" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="glubRadio" layoutX="675.0" layoutY="120.0" mnemonicParsing="false" text="GLUB" toggleGroup="$filterType" />
+      <RadioButton fx:id="glubRadio" layoutX="689.0" layoutY="132.0" mnemonicParsing="false" text="GLUB" toggleGroup="$filterType" />
       <TextField fx:id="filterText" layoutX="609.0" layoutY="69.0" promptText="Filter" />
    </children>
 </AnchorPane>

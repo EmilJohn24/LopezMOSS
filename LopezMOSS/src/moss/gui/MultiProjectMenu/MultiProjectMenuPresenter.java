@@ -1,30 +1,32 @@
 package moss.gui.MultiProjectMenu;
 
 
-import com.airhacks.afterburner.views.FXMLView;
-import javafx.beans.property.Property;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 import moss.gui.CorrelationMatrixMenu.CorrelationMatrixMenuModel;
 import moss.gui.CorrelationMatrixMenu.CorrelationMatrixMenuView;
+import moss.gui.utilities.CustomFXMLOperations;
 import moss.project.PathFilter;
 
 import javax.inject.Inject;
-import java.awt.*;
 import java.nio.file.Path;
 
 /**
  * Controls the multi-project menu
  */
 public class MultiProjectMenuPresenter {
+    //MENU ITEMS: SEPARATE ITEM MENU
+    @FXML
+    private ListView<Path> includedProjectsListView;
+    @FXML
+    private Button addProjectButton;
+    @FXML
+    private Button compareSeparateButton;
+
+    //FILTER ITEMS
     @FXML
     private RadioButton regexRadio;
     @FXML
@@ -35,6 +37,8 @@ public class MultiProjectMenuPresenter {
     private ToggleGroup filterType;
     @FXML
     private ListView<String> filterListView;
+
+    //MULTI-PROJECT FOLDER COMPARISON
     @FXML
     private Button startComparisonButton;
     @FXML
@@ -50,7 +54,9 @@ public class MultiProjectMenuPresenter {
     @Inject
     private MultiProjectMenuService services;
     @Inject
-    private MultiProjectMenuModel model;
+    private MultiProjectMenuModel singlePathProjectsModel;
+    @Inject
+    private SeparateProjectMenuModel separateProjectMenuModel;
     @Inject
     private CorrelationMatrixMenuModel correlationMatrixModel;
 
@@ -61,7 +67,7 @@ public class MultiProjectMenuPresenter {
         projectPathChooseButton.setOnMouseClicked((event -> {
             //PROJECT PATH CHOOSE BUTTON ACTION
             Path requestedPath = services.requestDirectoryFromUser();
-            model.setChosenProjectsPath(requestedPath);
+            singlePathProjectsModel.setChosenProjectsPath(requestedPath);
             projectPathLabel.setText(String.valueOf(requestedPath));
             projectCountLabel.setText(String.valueOf(services.folderCount(requestedPath)));
             startComparisonButton.setDisable(false);
@@ -70,12 +76,12 @@ public class MultiProjectMenuPresenter {
         //PART 2: Text filter
         filterText.setOnAction((event -> {
             filterListView.getItems().add(filterText.getText());
-            model.getFilterBuilder().addFilter(filterText.getText());
+            singlePathProjectsModel.getFilterBuilder().addFilter(filterText.getText());
         }));
         //VERBOSE: This simply takes the underlying value of the newly selected radio button (Filter type) and
         //injects that to the filter builder
         filterType.selectedToggleProperty().addListener((observable, oldValue, newValue) ->
-                model.getFilterBuilder().setFilterType((PathFilter.Type) newValue.getUserData()));
+                singlePathProjectsModel.getFilterBuilder().setFilterType((PathFilter.Type) newValue.getUserData()));
         regexRadio.setUserData(PathFilter.Type.REGEX);
         glubRadio.setUserData(PathFilter.Type.GLOB);
 
@@ -83,16 +89,30 @@ public class MultiProjectMenuPresenter {
         //PART 3: Comparison button
         startComparisonButton.setDisable(true);
         startComparisonButton.setOnMouseClicked((event -> {
-            //creates the correlation matrix and loads it into the correlation matrix menu's model
-            correlationMatrixModel.loadMatrix(services.processMultiProjectFolder(model.getChosenProjectsPath(), model.createFilter()));
-
+            //creates the correlation matrix and loads it into the correlation matrix menu's singlePathProjectsModel
+            correlationMatrixModel.loadMatrix(services.processMultiProjectFolder(singlePathProjectsModel.getChosenProjectsPath(), singlePathProjectsModel.createFilter()));
 
             //Load correlation matrix menu
-            CorrelationMatrixMenuView matrixView = new CorrelationMatrixMenuView();
-            Stage temporaryMatrixStage = new Stage();
-            temporaryMatrixStage.setScene(new Scene(matrixView.getView()));
-            temporaryMatrixStage.show();
+            CustomFXMLOperations.showFxmlViewInWindow(CorrelationMatrixMenuView.class);
         }));
+
+
+
+
+        //PART 4: ADD PROJECT BUTTON
+        addProjectButton.setOnMouseClicked(event ->{
+            Path pathToBeAdded = services.requestDirectoryFromUser();
+            separateProjectMenuModel.addProject(pathToBeAdded);
+            includedProjectsListView.getItems().add(pathToBeAdded);
+        });
+
+        //PART 5: Compare separate projects button
+        compareSeparateButton.setOnMouseClicked(event -> {
+            correlationMatrixModel.loadMatrix(services.processMultiPaths(
+                            separateProjectMenuModel.retrieveProjectPaths(), singlePathProjectsModel.createFilter()));
+            CustomFXMLOperations.showFxmlViewInWindow(CorrelationMatrixMenuView.class);
+                }
+        );
 
 
     }
