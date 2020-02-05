@@ -62,16 +62,18 @@ public final class PathFilter {
         return matches;
     }
 
+    /**
+     * Builder for path filters
+     */
     public static class PathFilterBuilder {
         private Collection<String> filters = new ArrayList<>();
-        private Type filterType;
+        private Type filterType = Type.REGEX;
         /**
          * @param filters Filters to be added
          */
         public PathFilterBuilder addAllFilters(Collection<String> filters) {
             this.filters.addAll(filters);
             return this;
-
         }
 
         /**
@@ -106,7 +108,13 @@ public final class PathFilter {
             return this;
         }
 
+        /**
+         * @return The filter created with all the added filter strings or a NO_FILTER filter if none are added in
+         */
         public PathFilter createFilter(){
+            //CHANGE: Added a check for emptiness of filter array. This is to ensure that even with a lack of filters, the behavior we will get
+            //is exactly that: having no filters.
+            if (filters.size() == 0) return PathFilter.NO_FILTER;
             return new PathFilter(filterType, filters);
         }
     }

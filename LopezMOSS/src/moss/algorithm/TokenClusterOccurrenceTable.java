@@ -58,6 +58,8 @@ class TokenClusterOccurrenceTable {
      */
     //quick delegation
     int total(){
+        //NOTE: Upon testing, there seems to be cases for which this might return 0 for some strange reason
+        if (this.occurrences.size() == 0) System.err.println("Error detected");
         return this.occurrences.size();
     }
 

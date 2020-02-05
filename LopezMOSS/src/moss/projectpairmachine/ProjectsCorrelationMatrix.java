@@ -34,6 +34,17 @@ public final class ProjectsCorrelationMatrix implements Iterable<ProjectsCorrela
 
 
     /**
+     * @return The project names of all projects in the matrix
+     */
+    public final Collection<String> getProjectNames(){
+        Collection<String> names = new ArrayList<>();
+        for (ResultRow row : rows){
+            names.add(row.getProject().getName());
+        }
+        return names;
+
+    }
+    /**
      * Holds information on the compared project and results for a single row of comparison
      */
     static public final class ResultRow{
