@@ -12,7 +12,7 @@ public class TokenHashingStrategy implements ComparisonStrategy {
 
     /**
      * [CHANGE] Deprecation notice has been removed. The strategy for all such instances of a ComparisonStrategy
-     * is that they should be contractually obligated to have a state of reusability after use
+     * is that they should be contractually obligated to be in a state where they are reusable after use
      */
     public TokenHashingStrategy(){
 
