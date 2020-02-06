@@ -6,74 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c9d7883-4ba3-4ca5-9987-924617f718d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../docs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-18.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-19.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-20.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/ComparisonStrategy.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/ComparisonStrategy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/HashingTokenizer.TokenizerEndException.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/HashingTokenizer.TokenizerEndException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/HashingTokenizer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/HashingTokenizer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/Token.TYPE.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/Token.TYPE.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/Token.TokenBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/Token.TokenBuilder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/Token.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/Token.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/TokenCluster.TokenClusterBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/TokenCluster.TokenClusterBuilder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/TokenCluster.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/TokenCluster.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/TokenClusterOccurrenceTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/TokenClusterOccurrenceTable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/TokenHashingStrategy.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/TokenHashingStrategy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/TokenTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/TokenTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/algorithm/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/algorithm/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/MultiProjectStorage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/MultiProjectStorage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/MultiStreamReaderGenerator.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/MultiStreamReaderGenerator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/MultiStreamReaderGeneratorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/MultiStreamReaderGeneratorTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/Project.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/Project.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/ProjectBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/ProjectBuilder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/ProjectFlatReaderDistributor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/ProjectFlatReaderDistributor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/ProjectFlatReaderDistributorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/ProjectFlatReaderDistributorTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/Projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/Projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/ProjectsTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/ProjectsTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/TestObjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/TestObjects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/project/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/project/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/MultiProjectComparison.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/MultiProjectComparison.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/ProjectsCorrelationMatrix.ProjectsCorrelationMatrixBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/ProjectsCorrelationMatrix.ProjectsCorrelationMatrixBuilder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/ProjectsCorrelationMatrix.ResultRow.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/ProjectsCorrelationMatrix.ResultRow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/ProjectsCorrelationMatrix.ResultSet.ResultRecord.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/ProjectsCorrelationMatrix.ResultSet.ResultRecord.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/ProjectsCorrelationMatrix.ResultSet.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/ProjectsCorrelationMatrix.ResultSet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/ProjectsCorrelationMatrix.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/ProjectsCorrelationMatrix.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/SimpleMultiProjectComparison.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/SimpleMultiProjectComparison.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/SimpleMultiProjectComparisonTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/SimpleMultiProjectComparisonTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/moss/projectpairmachine/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/moss/projectpairmachine/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/overview-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/package-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenu.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,6 +23,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenu.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/gui/MultiProjectMenu/MultiProjectMenuPresenter.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,7 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenuModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
@@ -114,24 +57,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="918">
+              <caret line="56" column="67" lean-forward="true" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/gui/MultiProjectMenu/MultiProjectMenuModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1094#1095#0" expanded="true" />
-                <element signature="e#1138#1139#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenuPresenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state relative-caret-position="459">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -249,7 +178,6 @@
         <option value="$PROJECT_DIR$/src/moss/projectpairmachine/MultiProjectComparison.java" />
         <option value="$PROJECT_DIR$/src/moss/projectpairmachine/SimpleMultiProjectComparison.java" />
         <option value="$PROJECT_DIR$/src/moss/gui/MultiProjectMenu/MultiProjectMenuView.java" />
-        <option value="$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenu.fxml" />
         <option value="$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenuService.java" />
         <option value="$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenuView.java" />
         <option value="$PROJECT_DIR$/src/moss/project/MultiProjectStorage.java" />
@@ -270,6 +198,7 @@
         <option value="$PROJECT_DIR$/src/moss/gui/MultiProjectMenu/SeparateProjectMenuModel.java" />
         <option value="$PROJECT_DIR$/src/moss/projectpairmachine/ProjectsCorrelationMatrix.java" />
         <option value="$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenuPresenter.java" />
+        <option value="$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenu.fxml" />
       </list>
     </option>
   </component>
@@ -569,6 +498,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6898017" visible="true" weight="0.26107383" />
       <window_info id="Structure" order="1" sideWeight="0.24220963" side_tool="true" weight="0.3577181" />
@@ -854,14 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenu.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/gui/MultiProjectMenu/SeparateProjectMenuModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -884,16 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2074">
           <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -923,16 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenuPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -979,6 +881,34 @@
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenuPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="56" column="67" lean-forward="true" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="masterDetails">
