@@ -27,7 +27,8 @@ public class Project {
      * @return A <i>Reader</i> that spits out a concatenation of all files in the project.
      * @see Reader
      */
-    final Reader getConcatenatedReader(){
+    //CHANGE: This was changed to public because it is needed by some facilities outside the project package
+    public final Reader getConcatenatedReader(){
         return readerDistributor.distribute();
     }
 

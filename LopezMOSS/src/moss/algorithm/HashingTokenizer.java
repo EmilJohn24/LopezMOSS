@@ -9,6 +9,8 @@ import java.util.Collection;
 /**
  * Creates tokens and token clusters from I/O readers
  */
+@SuppressWarnings("unused")
+//CHANGE: Suppressed unused warning
 class HashingTokenizer {
     private StreamTokenizer tokenizer;
     //CHANGE: this was moved from the TokenClusterOccurrenceTable class because it is more efficient to just ignore a token right from the start
@@ -70,7 +72,6 @@ class HashingTokenizer {
                 //For strings
                 tokenBuilder.setTypeWithValue(Token.TYPE.WORD, tokenizer.sval);
                 break;
-
             default:
                 //extra checks
                 //a quote check here
