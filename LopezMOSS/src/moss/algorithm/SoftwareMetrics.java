@@ -14,6 +14,7 @@ import java.nio.file.Path;
  * different metrics for that project
  * based on Haelstead's software metrics.
  */
+@SuppressWarnings("WeakerAccess")
 final public class SoftwareMetrics{
     private final Project measuredProject;
     private final TokenClusterOccurrenceTable table;
@@ -23,7 +24,7 @@ final public class SoftwareMetrics{
      * @param project Project to be measured
      * @return Software metric object from the project
      */
-    public static SoftwareMetrics fromProject(Project project){
+    public static SoftwareMetrics fromProject(Project project) throws IOException {
         return new SoftwareMetrics(project);
     }
 
@@ -32,7 +33,7 @@ final public class SoftwareMetrics{
      * @param filters Filters to be applied to that path
      * @return Software metric object from the project
      */
-    public static SoftwareMetrics fromPath(Path path, PathFilter filters){
+    public static SoftwareMetrics fromPath(Path path, PathFilter filters) throws IOException {
         ProjectBuilder projectBuilder = new ProjectBuilder();
         projectBuilder
                 .setPath(path)
@@ -52,7 +53,6 @@ final public class SoftwareMetrics{
         this.measuredProject = project;
         table = new TokenClusterOccurrenceTable();
         table.tabulate(project.getConcatenatedReader());
-
     }
 
     /**
@@ -62,14 +62,6 @@ final public class SoftwareMetrics{
         return table.total() * Math.log(table.uniqueCount());
     }
 
-    /**
-     * Potential Minimum Volume V* is defined as the volume
-     * of the most succint program in which a problem can be coded
-     * @return Potential minimum volume
-     */
-    public final double potentialMinVolume(){
-
-    }
 
 
 }
