@@ -6,7 +6,8 @@ import java.io.*;
 import java.util.Collection;
 import java.util.Collections;
 
-/*the purpose of this class is to collect
+/**
+* The purpose of this class is to collect
 * a bunch of readers, combine them into a single
 * buffer of memory, and generate a byte stream
 * when necessary.
