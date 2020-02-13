@@ -7,7 +7,7 @@ import java.util.HashMap;
 @SuppressWarnings("WeakerAccess")
 class TokenClusterOccurrenceTable {
     private HashMap<TokenCluster, Integer> occurrences;
-    static int DEFAULT_CLUSTER_SIZE = 2;
+    static int DEFAULT_CLUSTER_SIZE = 4;
 
     /**
      * Creates the table

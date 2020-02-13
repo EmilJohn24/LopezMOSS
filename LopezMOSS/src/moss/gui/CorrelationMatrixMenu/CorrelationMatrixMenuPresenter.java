@@ -1,13 +1,11 @@
 package moss.gui.CorrelationMatrixMenu;
 
 import javafx.fxml.FXML;
-import javafx.scene.Node;
-import javafx.scene.control.TableView;
+import javafx.geometry.Insets;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import moss.gui.utilities.CustomColorOperations;
-import moss.gui.utilities.CustomFXMLOperations;
 import moss.projectpairmachine.ProjectsCorrelationMatrix;
 import moss.projectpairmachine.ProjectsCorrelationMatrix.*;
 
@@ -34,6 +32,7 @@ public class CorrelationMatrixMenuPresenter {
         final ProjectsCorrelationMatrix matrix = model.getMatrix();
         //PHASE 1: Load headers
         Collection<Text> nameText = new ArrayList<>();
+        nameText.add(new Text());
         for (String name : matrix.getProjectNames()){
             nameText.add(new Text(name));
         }
@@ -46,7 +45,9 @@ public class CorrelationMatrixMenuPresenter {
         int row = 1;
         for (ResultRow resultRow : matrix.getRows()){
             Collection<Pane> resultsPaneInRow = new ArrayList<>();
-            resultsPaneInRow.add(new StackPane(new Text(resultRow.getProject().getName())));
+            Pane newPanes = new StackPane(new Text(resultRow.getProject().getName()));
+            newPanes.setPrefWidth(500);
+            resultsPaneInRow.add(newPanes);
             for (ResultSet.ResultRecord result : resultRow.getResults()){
                 Pane scoreTextContainer = new StackPane(new Text(String.format("%.2f", result.getScore())));
                 scoreTextContainer.setBackground(
