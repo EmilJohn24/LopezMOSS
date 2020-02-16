@@ -1,13 +1,13 @@
-window_sizes 958 983 450 502 801 128
+window_sizes 1920 1001 450 1464 819 128
 
 diagrams
-  classdiagram_ref 135365 // OverallClass
-    1331 770 68 A0 0 0
-  active  objectdiagram_ref 135493 // Objects
-    1171 655 100 A4 0 0
+  active  classdiagram_ref 135365 // OverallClass
+    1331 770 128 A0 342 0
+  objectdiagram_ref 135493 // Objects
+    1171 655 80 A4 0 0
 end
 show_stereotypes
-selected objectdiagram_ref 135493 // Objects
+selected classdiagram_ref 135365 // OverallClass
 open
   activity_ref 128069 // DataFlowDiagram
 end

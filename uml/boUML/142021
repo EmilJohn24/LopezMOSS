@@ -1,6 +1,6 @@
 format 222
-"project" // project
-  revision 3
+"project" // project::project
+  revision 1
   modified_by 69 "ACER"
   // class settings
   
@@ -31,8 +31,8 @@ format 222
    end
   
   java_dir "C:\\Users\\ACER\\LopezMOSS\\LopezMOSS\\src\\moss\\project/"
-  java_package "moss"
-  classview 135493 "project"
+  java_package "moss.project"
+  classview 142533 "project"
     
     classdiagramsettings member_max_width 0 end
     
@@ -52,7 +52,7 @@ format 222
     
     activitydiagramsettings
      end
-    class 139973 "MultiProjectStorage"
+    class 148677 "MultiProjectStorage"
       visibility public 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -66,16 +66,16 @@ ${members}}
       
       comment "Class that stores multiple projects
 "
-      classrelation 137925 // <realization>
-	relation 137925 -_-|>
+      classrelation 146885 // <realization>
+	relation 146885 -_-|>
 	  a public
 	    java "${type}<Project>"
-	    classrelation_ref 137925 // <realization>
-	  b parent class_ref 136389 // Iterable
+	    classrelation_ref 146885 // <realization>
+	  b parent class_ref 148933 // Iterable
       end
 
-      classrelation 138053 // projects (<unidirectional association>)
-	relation 138053 --->
+      classrelation 147013 // projects (<unidirectional association>)
+	relation 147013 --->
 	  stereotype "Collection"
 	  a role_name "projects" const_relation private
 	    comment "NOTES on this iterator: The decision to make this project iterator is motivated mainly by the fact that
@@ -83,15 +83,29 @@ I have observed that another module has become too dependent on multiple objects
 "
 	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
 "
-	    classrelation_ref 138053 // projects (<unidirectional association>)
-	  b parent class_ref 140101 // Project
+	    classrelation_ref 147013 // projects (<unidirectional association>)
+	  b parent class_ref 148805 // Project
       end
 
-      operation 149189 "iterator"
-	public return_type class_ref 140101 // Project
+      operation 162245 "projectCount"
+	public explicit_return_type "int"
 	nparams 0
 	
-	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Iterator<${type}> ${name}${(}${)}${throws}${staticnl}{
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@return Number of projects stored
+"
+      end
+
+      operation 162373 "iterator"
+	public return_type class_ref 148805 // Project
+	nparams 0
+	
+	preserve_java_body_indent final java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}Iterator<${type}> ${name}${(}${)}${throws}${staticnl}{
   ${body}}
 "
 	java_annotation "@Override
@@ -103,11 +117,11 @@ I have observed that another module has become too dependent on multiple objects
 "
       end
 
-      operation 149317 "projectsIn"
-	class_operation public return_type class_ref 139973 // MultiProjectStorage
+      operation 162501 "projectsIn"
+	class_operation public return_type class_ref 148677 // MultiProjectStorage
 	nparams 2
 	  param inout name "projectsFolder" explicit_type "Path"
-	  param in name "globFilter" explicit_type "String"
+	  param inout name "filter" type class_ref 149061 // PathFilter
 	
 	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
   ${body}}
@@ -117,13 +131,13 @@ I have observed that another module has become too dependent on multiple objects
 	
 	comment "Takes projects from the subdirectories of a path and stores them
 @param projectsFolder Folder that contains the projects
-@param globFilter GLOB-based filter for files
+@param filter Path filter for files
 @return An iterable storage
 "
       end
 
-      operation 149445 "fromCollection"
-	class_operation public return_type class_ref 139973 // MultiProjectStorage
+      operation 162629 "fromCollection"
+	class_operation public return_type class_ref 148677 // MultiProjectStorage
 	nparams 1
 	  param inout name "projects" explicit_type "Collection<Project>"
 	
@@ -139,7 +153,40 @@ I have observed that another module has become too dependent on multiple objects
 "
       end
 
-      operation 149573 "MultiProjectStorage"
+      operation 162757 "fromPathCollection"
+	class_operation public return_type class_ref 148677 // MultiProjectStorage
+	nparams 2
+	  param inout name "projectPaths" explicit_type "Collection<Path>"
+	  param inout name "filters" type class_ref 149061 // PathFilter
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@param projectPaths Collection of paths to each project to be added
+@return Storage for project objects for every path in the collection
+"
+      end
+
+      operation 162885 "MultiProjectStorage"
+	private explicit_return_type ""
+	nparams 2
+	  param inout name "projectPaths" explicit_type "Collection<Path>"
+	  param inout name "filters" type class_ref 149061 // PathFilter
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@param projectPaths Collection of paths to each project to be added
+"
+      end
+
+      operation 163013 "MultiProjectStorage"
 	private explicit_return_type ""
 	nparams 1
 	  param inout name "projects" explicit_type "Collection<Project>"
@@ -154,11 +201,11 @@ I have observed that another module has become too dependent on multiple objects
 "
       end
 
-      operation 149701 "MultiProjectStorage"
+      operation 163141 "MultiProjectStorage"
 	private explicit_return_type ""
 	nparams 2
 	  param inout name "projectsFolder" explicit_type "Path"
-	  param in name "globFilter" explicit_type "String"
+	  param inout name "filter" type class_ref 149061 // PathFilter
 	
 	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
   ${body}}
@@ -167,12 +214,12 @@ I have observed that another module has become too dependent on multiple objects
 	
 	
 	comment "@param projectsFolder Folder containing projects to be stored
-@param globFilter Filter for particular types of files
+@param filter Filter for particular types of files
 "
       end
     end
 
-    class 140101 "Project"
+    class 148805 "Project"
       visibility public 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -186,7 +233,7 @@ ${members}}
       
       comment "Holds a programming project folder
 "
-      attribute 140741 "name"
+      attribute 149701 "name"
 	const_attribute private explicit_type "String"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
@@ -198,7 +245,7 @@ ${members}}
 	MysqlColumn
       end
 
-      attribute 140869 "path"
+      attribute 149829 "path"
 	const_attribute private explicit_type "Path"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
@@ -210,21 +257,21 @@ ${members}}
 	MysqlColumn
       end
 
-      classrelation 138181 // readerDistributor (<unidirectional association>)
-	relation 138181 --->
+      classrelation 148037 // readerDistributor (<unidirectional association>)
+	relation 148037 --->
 	  a role_name "readerDistributor" const_relation private
 	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
-	    classrelation_ref 138181 // readerDistributor (<unidirectional association>)
-	  b parent class_ref 140485 // ProjectFlatReaderDistributor
+	    classrelation_ref 148037 // readerDistributor (<unidirectional association>)
+	  b parent class_ref 149701 // ProjectFlatReaderDistributor
       end
 
-      operation 150469 "Project"
+      operation 165317 "Project"
 	package explicit_return_type ""
 	nparams 3
 	  param inout name "path" explicit_type "Path"
 	  param in name "name" explicit_type "String"
-	  param in name "globFilter" explicit_type "String"
+	  param inout name "globFilter" type class_ref 149061 // PathFilter
 	
 	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
   ${body}}
@@ -238,8 +285,8 @@ ${members}}
 "
       end
 
-      operation 150597 "getConcatenatedReader"
-	package explicit_return_type "Reader"
+      operation 165445 "getConcatenatedReader"
+	public explicit_return_type "Reader"
 	nparams 0
 	
 	preserve_java_body_indent final java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
@@ -250,10 +297,11 @@ ${members}}
 	
 	comment "@return A <i>Reader</i> that spits out a concatenation of all files in the project.
 @see Reader
-"
+
+CHANGE: This was changed to public because it is needed by some facilities outside the project package"
       end
 
-      operation 150725 "getPath"
+      operation 165573 "getPath"
 	public explicit_return_type "Path"
 	nparams 0
 	
@@ -268,7 +316,7 @@ ${members}}
 "
       end
 
-      operation 150853 "getName"
+      operation 165701 "getName"
 	public explicit_return_type "String"
 	nparams 0
 	
@@ -283,7 +331,365 @@ ${members}}
       end
     end
 
-    class 140229 "MultiStreamReaderGenerator"
+    class 149061 "PathFilter"
+      visibility public 
+      cpp_decl ""
+      final java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings(\"WeakerAccess\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Used for filtering paths
+"
+      classrelation 147141 // CPP_FILTER (<unidirectional association>)
+	relation 147141 --->
+	  a role_name "CPP_FILTER" init_value " new PathFilter(Type.GLOB, \"**/*.cpp\")" class_relation const_relation public
+	    comment "CHANGE: Made class immutable and created builder to mediate immutability
+"
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 147141 // CPP_FILTER (<unidirectional association>)
+	  b parent class_ref 149061 // PathFilter
+      end
+
+      classrelation 147269 // JAVA_FILTER (<unidirectional association>)
+	relation 147269 --->
+	  a role_name "JAVA_FILTER" init_value " new PathFilter(Type.GLOB, \"**/*.java\")" class_relation const_relation public
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 147269 // JAVA_FILTER (<unidirectional association>)
+	  b parent class_ref 149061 // PathFilter
+      end
+
+      classrelation 147397 // CPP_AND_JAVA_FILTER (<unidirectional association>)
+	relation 147397 --->
+	  a role_name "CPP_AND_JAVA_FILTER" init_value " new PathFilter(Type.GLOB,\"**/*.{java, cpp, h}\")" class_relation const_relation public
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 147397 // CPP_AND_JAVA_FILTER (<unidirectional association>)
+	  b parent class_ref 149061 // PathFilter
+      end
+
+      classrelation 147525 // TXT_FILTER (<unidirectional association>)
+	relation 147525 --->
+	  a role_name "TXT_FILTER" init_value " new PathFilter(Type.GLOB,\"**/*.txt\")" class_relation const_relation public
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 147525 // TXT_FILTER (<unidirectional association>)
+	  b parent class_ref 149061 // PathFilter
+      end
+
+      classrelation 147653 // NO_FILTER (<unidirectional association>)
+	relation 147653 --->
+	  a role_name "NO_FILTER" init_value " new PathFilter(Type.GLOB,\"**/*\")" class_relation const_relation public
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 147653 // NO_FILTER (<unidirectional association>)
+	  b parent class_ref 149061 // PathFilter
+      end
+
+      class 149445 "Type"
+	visibility public stereotype "enum"
+	cpp_decl ""
+	java_decl "${comment}${@}${visibility}${static}${final}${abstract}enum ${name}${implements} {
+${items};
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	attribute 149061 "REGEX"
+	  public type class_ref 149445 // Type
+	  cpp_decl ""
+	  java_decl "  ${@}${name}(\"regex\"),${comment}"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "CHANGE: Made Type enum public"
+	end
+
+	attribute 149189 "GLOB"
+	  public type class_ref 149445 // Type
+	  cpp_decl ""
+	  java_decl "  ${@}${name}(\"glob\"),${comment}"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	attribute 149317 "filterNameID"
+	  package explicit_type "String"
+	  stereotype "attribute"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	operation 163909 "Type"
+	  package explicit_return_type ""
+	  nparams 1
+	    param in name "name" explicit_type "String"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "Sole constructor.  Programmers cannot invoke this constructor.
+It is for use by code emitted by the compiler in response to
+enum type declarations.
+
+@param name    - The name of this enum constant, which is the identifier
+               used to declare it.
+"
+	end
+
+	operation 164037 "getFilterTypeIdentifier"
+	  package explicit_return_type "String"
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "@return Filter ID string
+"
+	end
+      end
+
+      classrelation 147781 // filterType (<unidirectional association>)
+	relation 147781 --->
+	  a role_name "filterType" const_relation private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 147781 // filterType (<unidirectional association>)
+	  b parent class_ref 149445 // Type
+      end
+
+      attribute 149445 "filters"
+	const_attribute private explicit_type "String"
+	stereotype "Collection"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 164165 "matchesAll"
+	package explicit_return_type "boolean"
+	nparams 1
+	  param inout name "path" explicit_type "Path"
+	
+	preserve_java_body_indent final java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@param path Path to be matched
+@return If the path matches any of the filters
+"
+      end
+
+      class 149573 "PathFilterBuilder"
+	visibility public 
+	cpp_decl ""
+	static java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	attribute 149573 "filters"
+	  private explicit_type "String"
+	  init_value " new ArrayList<>()"
+	  stereotype "Collection"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	classrelation 147909 // filterType (<unidirectional association>)
+	  relation 147909 --->
+	    a role_name "filterType" init_value " Type.REGEX" private
+	      java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	      classrelation_ref 147909 // filterType (<unidirectional association>)
+	    b parent class_ref 149445 // Type
+	end
+
+	operation 164293 "addAllFilters"
+	  public return_type class_ref 149573 // PathFilterBuilder
+	  nparams 1
+	    param inout name "filters" explicit_type "Collection<String>"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "@param filters Filters to be added
+"
+	end
+
+	operation 164421 "addFilter"
+	  public return_type class_ref 149573 // PathFilterBuilder
+	  nparams 1
+	    param in name "filter" explicit_type "String"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "@param filter Filter text to be added
+"
+	end
+
+	operation 164549 "removeFilter"
+	  public return_type class_ref 149573 // PathFilterBuilder
+	  nparams 1
+	    param in name "filter" explicit_type "String"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "@param filter Filter to be removed
+"
+	end
+
+	operation 164677 "removeAllFilters"
+	  public return_type class_ref 149573 // PathFilterBuilder
+	  nparams 1
+	    param inout name "filters" explicit_type "Collection<String>"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "@param filters All filters to be removed
+"
+	end
+
+	operation 164805 "setFilterType"
+	  public return_type class_ref 149573 // PathFilterBuilder
+	  nparams 1
+	    param inout name "filterType" type class_ref 149445 // Type
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "@param filterType Filter type of path filter
+"
+	end
+
+	operation 164933 "createFilter"
+	  public return_type class_ref 149061 // PathFilter
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "@return The filter created with all the added filter strings or a NO_FILTER filter if none are added in
+"
+	end
+
+	classrelation 148421 // <dependency>
+	  relation 148421 -_->
+	    a public
+	      classrelation_ref 148421 // <dependency>
+	    b parent class_ref 149061 // PathFilter
+	end
+      end
+
+      operation 165061 "PathFilter"
+	private explicit_return_type ""
+	nparams 2
+	  param inout name "filterType" type class_ref 149445 // Type
+	  param inout name "" explicit_type "String...initialFilters"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 165189 "PathFilter"
+	private explicit_return_type ""
+	nparams 2
+	  param inout name "filterType" type class_ref 149445 // Type
+	  param inout name "initialFilters" explicit_type "Collection<String>"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 148549 // <composition>
+	relation 148549 *---
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 148549 // <composition>
+	  b role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 148677 // <composition>
+      end
+    end
+
+    class 149189 "MultiStreamReaderGenerator"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -295,13 +701,13 @@ ${members}}
       explicit_switch_type ""
       mysql_decl ""
       
-      comment "the purpose of this class is to collect
+      comment "The purpose of this class is to collect
 a bunch of readers, combine them into a single
 buffer of memory, and generate a byte stream
 when necessary.
 The benefits of this class is that it minimizes the actual number of copies of the characters needed by the package.
 "
-      attribute 140613 "combinedByteArray"
+      attribute 148933 "combinedByteArray"
 	const_attribute private explicit_type "byte"
 	multiplicity "[]"
 	cpp_decl ""
@@ -314,7 +720,7 @@ The benefits of this class is that it minimizes the actual number of copies of t
 	MysqlColumn
       end
 
-      operation 149829 "MultiStreamReaderGenerator"
+      operation 163269 "MultiStreamReaderGenerator"
 	package explicit_return_type ""
 	nparams 1
 	  param inout name "streams" explicit_type "Collection<? extends InputStream>"
@@ -332,7 +738,7 @@ The benefits of this class is that it minimizes the actual number of copies of t
 "
       end
 
-      operation 149957 "generate"
+      operation 163397 "generate"
 	package explicit_return_type "Reader"
 	nparams 0
 	
@@ -351,7 +757,7 @@ but at the same time, it does not distribute any unnecessary copies of the combi
       end
     end
 
-    class 140357 "MultiStreamReaderGeneratorTest"
+    class 149317 "MultiStreamReaderGeneratorTest"
       visibility public 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -363,7 +769,7 @@ ${members}}
       explicit_switch_type ""
       mysql_decl ""
       
-      operation 150085 "before"
+      operation 163525 "before"
 	public explicit_return_type "void"
 	nparams 0
 	nexceptions 1
@@ -379,7 +785,7 @@ ${members}}
 	
       end
 
-      operation 150213 "after"
+      operation 163653 "after"
 	public explicit_return_type "void"
 	nparams 0
 	nexceptions 1
@@ -395,7 +801,7 @@ ${members}}
 	
       end
 
-      operation 150341 "testGenerate"
+      operation 163781 "testGenerate"
 	public explicit_return_type "void"
 	nparams 0
 	nexceptions 1
@@ -416,7 +822,7 @@ Method: generate()
       end
     end
 
-    class 140485 "ProjectFlatReaderDistributor"
+    class 149701 "ProjectFlatReaderDistributor"
       visibility public 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -430,16 +836,16 @@ ${members}}
       
       comment "Combines filtered files from a single path to a single reader.
 "
-      classrelation 138309 // generator (<unidirectional association>)
-	relation 138309 --->
+      classrelation 148293 // generator (<unidirectional association>)
+	relation 148293 --->
 	  a role_name "generator" const_relation private
 	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
-	    classrelation_ref 138309 // generator (<unidirectional association>)
-	  b parent class_ref 140229 // MultiStreamReaderGenerator
+	    classrelation_ref 148293 // generator (<unidirectional association>)
+	  b parent class_ref 149189 // MultiStreamReaderGenerator
       end
 
-      operation 151621 "ProjectFlatReaderDistributor"
+      operation 166469 "ProjectFlatReaderDistributor"
 	public explicit_return_type ""
 	nparams 1
 	  param inout name "projectPath" explicit_type "Path"
@@ -452,11 +858,11 @@ ${members}}
 	
       end
 
-      operation 151749 "ProjectFlatReaderDistributor"
+      operation 166597 "ProjectFlatReaderDistributor"
 	public explicit_return_type ""
 	nparams 2
 	  param inout name "projectPath" explicit_type "Path"
-	  param in name "globFilter" explicit_type "String"
+	  param inout name "globFilter" type class_ref 149061 // PathFilter
 	
 	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
   ${body}}
@@ -471,7 +877,7 @@ the filter uses the GLOB syntax
 "
       end
 
-      operation 151877 "distribute"
+      operation 166725 "distribute"
 	package explicit_return_type "Reader"
 	nparams 0
 	
@@ -486,11 +892,13 @@ the filter uses the GLOB syntax
       end
     end
 
-    class 140613 "ProjectBuilder"
+    class 149829 "ProjectBuilder"
       visibility public 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
 ${members}}
+"
+      java_annotation "@SuppressWarnings(\"ALL\")
 "
       php_decl ""
       python_2_2 python_decl ""
@@ -500,7 +908,7 @@ ${members}}
       
       comment "Builds <i>Project</i> objects.
 "
-      attribute 140997 "path"
+      attribute 149957 "path"
 	private explicit_type "Path"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
@@ -512,7 +920,7 @@ ${members}}
 	MysqlColumn
       end
 
-      attribute 141125 "name"
+      attribute 150085 "name"
 	private explicit_type "String"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
@@ -524,19 +932,16 @@ ${members}}
 	MysqlColumn
       end
 
-      attribute 141253 "globFilter"
-	private explicit_type "String"
-	cpp_decl ""
-	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+      classrelation 148165 // filter (<unidirectional association>)
+	relation 148165 --->
+	  a role_name "filter" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+	    classrelation_ref 148165 // filter (<unidirectional association>)
+	  b parent class_ref 149061 // PathFilter
       end
 
-      operation 150981 "ProjectBuilder"
+      operation 165829 "ProjectBuilder"
 	public explicit_return_type ""
 	nparams 0
 	
@@ -551,8 +956,8 @@ No filter by default
 "
       end
 
-      operation 151109 "setPath"
-	public return_type class_ref 140613 // ProjectBuilder
+      operation 165957 "setPath"
+	public return_type class_ref 149829 // ProjectBuilder
 	nparams 1
 	  param inout name "path" explicit_type "Path"
 	
@@ -567,8 +972,8 @@ No filter by default
 "
       end
 
-      operation 151237 "setName"
-	public return_type class_ref 140613 // ProjectBuilder
+      operation 166085 "setName"
+	public return_type class_ref 149829 // ProjectBuilder
 	nparams 1
 	  param in name "name" explicit_type "String"
 	
@@ -583,10 +988,10 @@ No filter by default
 "
       end
 
-      operation 151365 "setGlobFilter"
-	public return_type class_ref 140613 // ProjectBuilder
+      operation 166213 "setFilter"
+	public return_type class_ref 149829 // ProjectBuilder
 	nparams 1
-	  param in name "globFilter" explicit_type "String"
+	  param inout name "filter" type class_ref 149061 // PathFilter
 	
 	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
   ${body}}
@@ -594,13 +999,13 @@ No filter by default
 	
 	
 	
-	comment "@param globFilter Text filter for the files that can be accessed from the project in GLOB format.
+	comment "@param filter Text filter for the files that can be accessed from the project in GLOB format.
 @return A builder for the project to be built
 "
       end
 
-      operation 151493 "createProject"
-	public return_type class_ref 140101 // Project
+      operation 166341 "createProject"
+	public return_type class_ref 148805 // Project
 	nparams 0
 	
 	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
@@ -612,20 +1017,9 @@ No filter by default
 	comment "@return The project generated with all values set.
 "
       end
-
-      classrelation 140101 // <dependency>
-	relation 140101 -_->
-	  a public
-	    classrelation_ref 140101 // <dependency>
-	  b parent class_ref 140101 // Project
-      end
-
-      classrelation 148677 // <composition>
-	relation_ref 148549 // <composition>
-      end
     end
 
-    class 140741 "ProjectFlatReaderDistributorTest"
+    class 149957 "ProjectFlatReaderDistributorTest"
       visibility public 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -637,7 +1031,7 @@ ${members}}
       explicit_switch_type ""
       mysql_decl ""
       
-      operation 152005 "before"
+      operation 166853 "before"
 	public explicit_return_type "void"
 	nparams 0
 	nexceptions 1
@@ -653,7 +1047,7 @@ ${members}}
 	
       end
 
-      operation 152133 "after"
+      operation 166981 "after"
 	public explicit_return_type "void"
 	nparams 0
 	nexceptions 1
@@ -669,7 +1063,7 @@ ${members}}
 	
       end
 
-      operation 152261 "testDistribute"
+      operation 167109 "testDistribute"
 	public explicit_return_type "void"
 	nparams 0
 	nexceptions 1
@@ -690,7 +1084,7 @@ Method: distribute()
       end
     end
 
-    class 140869 "Projects"
+    class 150085 "Projects"
       visibility public 
       cpp_decl ""
       final java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -706,72 +1100,7 @@ ${members}}
       
       comment "A class containing many operations that can be done on <i>Project</i> objects
 "
-      attribute 141381 "CPP_FILTER"
-	class_attribute const_attribute public explicit_type "String"
-	init_value " \"**/*.cpp\""
-	cpp_decl ""
-	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
-"
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 141509 "JAVA_FILTER"
-	class_attribute const_attribute public explicit_type "String"
-	init_value " \"**/*.java\""
-	cpp_decl ""
-	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
-"
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 141637 "CPP_AND_JAVA_FILTER"
-	class_attribute const_attribute public explicit_type "String"
-	init_value " \"**/*.{java, cpp, h}\""
-	cpp_decl ""
-	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
-"
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 141765 "TXT_FILTER"
-	class_attribute const_attribute public explicit_type "String"
-	init_value " \"**/*.txt\""
-	cpp_decl ""
-	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
-"
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 141893 "NO_FILTER"
-	class_attribute const_attribute public explicit_type "String"
-	init_value " \"**/*\""
-	cpp_decl ""
-	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
-"
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      operation 152389 "Projects"
+      operation 167237 "Projects"
 	private explicit_return_type ""
 	nparams 0
 	
@@ -783,11 +1112,11 @@ ${members}}
 	
       end
 
-      operation 152517 "compare"
+      operation 167365 "compare"
 	class_operation public explicit_return_type "double"
 	nparams 3
-	  param inout name "first" type class_ref 140101 // Project
-	  param inout name "second" type class_ref 140101 // Project
+	  param inout name "first" type class_ref 148805 // Project
+	  param inout name "second" type class_ref 148805 // Project
 	  param inout name "strategy" type class_ref 138565 // ComparisonStrategy
 	
 	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
@@ -805,33 +1134,9 @@ Compares two <i>Project</i>s and returns a score from 0.0 to 1.0
 @return Score for comparison
 "
       end
-
-      classrelation 140229 // <unidirectional association>
-	relation 140229 --->
-	  a role_name "" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
-"
-	    classrelation_ref 140229 // <unidirectional association>
-	  b parent class_ref 140101 // Project
-      end
-
-      classrelation 140357 // <unidirectional association>
-	relation 140357 --->
-	  a role_name "" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
-"
-	    classrelation_ref 140357 // <unidirectional association>
-	  b parent class_ref 140869 // Projects
-      end
-
-      simplerelation 134597
-	-_->
-	  on 
-	  package_ref 135237 // algorithm
-      end
     end
 
-    class 140997 "ProjectsTest"
+    class 150213 "ProjectsTest"
       visibility public 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -843,7 +1148,7 @@ ${members}}
       explicit_switch_type ""
       mysql_decl ""
       
-      operation 152645 "before"
+      operation 167493 "before"
 	public explicit_return_type "void"
 	nparams 0
 	nexceptions 1
@@ -859,7 +1164,7 @@ ${members}}
 	
       end
 
-      operation 152773 "after"
+      operation 167621 "after"
 	public explicit_return_type "void"
 	nparams 0
 	nexceptions 1
@@ -875,7 +1180,7 @@ ${members}}
 	
       end
 
-      operation 152901 "testCompare"
+      operation 167749 "testCompare"
 	public explicit_return_type "void"
 	nparams 0
 	nexceptions 1
@@ -897,7 +1202,7 @@ Method: compare(Project first, Project second, ComparisonStrategy strategy)
       end
     end
 
-    class 141125 "TestObjects"
+    class 150341 "TestObjects"
       visibility public 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -911,7 +1216,7 @@ ${members}}
       explicit_switch_type ""
       mysql_decl ""
       
-      attribute 142021 "TEST_PROJECT_1_PATH"
+      attribute 150213 "TEST_PROJECT_1_PATH"
 	class_attribute const_attribute public explicit_type "Path"
 	init_value " Paths.get(new File(\"testfiles/project1\").getAbsolutePath())"
 	cpp_decl ""
@@ -924,7 +1229,7 @@ ${members}}
 	MysqlColumn
       end
 
-      attribute 142149 "TEST_PROJECT_2_PATH"
+      attribute 150341 "TEST_PROJECT_2_PATH"
 	class_attribute const_attribute public explicit_type "Path"
 	init_value " Paths.get(new File(\"testfiles/project2\").getAbsolutePath())"
 	cpp_decl ""
@@ -937,7 +1242,7 @@ ${members}}
 	MysqlColumn
       end
 
-      attribute 142277 "SUBMISSIONS_PATH"
+      attribute 150469 "SUBMISSIONS_PATH"
 	class_attribute const_attribute public explicit_type "Path"
 	init_value " Paths.get(new File(\"test_submissions\").getAbsolutePath())"
 	cpp_decl ""
@@ -949,18 +1254,35 @@ ${members}}
 	mysql_decl ""
 	MysqlColumn
       end
+
+      attribute 150597 "SUBMISSION_PATH_FOLDER_COUNT"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 36"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "TODO: automate number"
+      end
     end
   end
 
-  deploymentview 135237 "project"
+  deploymentview 141893 "project"
     //deployment diagram settings
     deploymentdiagramsettings
      end
-    artifact 138437 "MultiProjectStorage"
+    artifact 146629 "MultiProjectStorage"
       stereotype "source"
       java_src "${comment}
 ${package}
 ${imports}
+import com.sun.org.apache.xpath.internal.operations.Mult;
+import javax.annotation.Nullable;
+import javax.validation.constraints.NotNull;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -970,11 +1292,11 @@ import java.util.Iterator;
 import java.util.stream.Stream;
 ${definition}"
       associated_elems
-	class_ref 139973 // MultiProjectStorage
+	class_ref 148677 // MultiProjectStorage
       end
     end
 
-    artifact 138565 "MultiStreamReaderGenerator"
+    artifact 146757 "MultiStreamReaderGenerator"
       stereotype "source"
       java_src "${comment}
 ${package}
@@ -985,11 +1307,11 @@ import java.util.Collection;
 import java.util.Collections;
 ${definition}"
       associated_elems
-	class_ref 140229 // MultiStreamReaderGenerator
+	class_ref 149189 // MultiStreamReaderGenerator
       end
     end
 
-    artifact 138693 "MultiStreamReaderGeneratorTest"
+    artifact 146885 "MultiStreamReaderGeneratorTest"
       stereotype "source"
       java_src "${comment}
 ${package}
@@ -1004,11 +1326,29 @@ import java.util.ArrayList;
 import java.util.Collection;
 ${definition}"
       associated_elems
-	class_ref 140357 // MultiStreamReaderGeneratorTest
+	class_ref 149317 // MultiStreamReaderGeneratorTest
       end
     end
 
-    artifact 138821 "Project"
+    artifact 147013 "PathFilter"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.awt.*;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
+import java.nio.file.PathMatcher;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+${definition}"
+      associated_elems
+	class_ref 149061 // PathFilter
+      end
+    end
+
+    artifact 147141 "Project"
       stereotype "source"
       java_src "${comment}
 ${package}
@@ -1017,11 +1357,11 @@ import java.io.Reader;
 import java.nio.file.Path;
 ${definition}"
       associated_elems
-	class_ref 140101 // Project
+	class_ref 148805 // Project
       end
     end
 
-    artifact 138949 "ProjectBuilder"
+    artifact 147269 "ProjectBuilder"
       stereotype "source"
       java_src "${comment}
 ${package}
@@ -1029,11 +1369,11 @@ ${imports}
 import java.nio.file.Path;
 ${definition}"
       associated_elems
-	class_ref 140613 // ProjectBuilder
+	class_ref 149829 // ProjectBuilder
       end
     end
 
-    artifact 139077 "ProjectFlatReaderDistributor"
+    artifact 147397 "ProjectFlatReaderDistributor"
       stereotype "source"
       java_src "${comment}
 ${package}
@@ -1045,11 +1385,11 @@ import java.util.Collection;
 import java.util.stream.Stream;
 ${definition}"
       associated_elems
-	class_ref 140485 // ProjectFlatReaderDistributor
+	class_ref 149701 // ProjectFlatReaderDistributor
       end
     end
 
-    artifact 139205 "ProjectFlatReaderDistributorTest"
+    artifact 147525 "ProjectFlatReaderDistributorTest"
       stereotype "source"
       java_src "${comment}
 ${package}
@@ -1060,11 +1400,11 @@ import org.junit.After;
 import java.io.Reader;
 ${definition}"
       associated_elems
-	class_ref 140741 // ProjectFlatReaderDistributorTest
+	class_ref 149957 // ProjectFlatReaderDistributorTest
       end
     end
 
-    artifact 139333 "Projects"
+    artifact 147653 "Projects"
       stereotype "source"
       java_src "${comment}
 ${package}
@@ -1073,11 +1413,11 @@ import moss.algorithm.ComparisonStrategy;
 import java.io.IOException;
 ${definition}"
       associated_elems
-	class_ref 140869 // Projects
+	class_ref 150085 // Projects
       end
     end
 
-    artifact 139461 "ProjectsTest"
+    artifact 147781 "ProjectsTest"
       stereotype "source"
       java_src "${comment}
 ${package}
@@ -1088,11 +1428,11 @@ import org.junit.Before;
 import org.junit.After;
 ${definition}"
       associated_elems
-	class_ref 140997 // ProjectsTest
+	class_ref 150213 // ProjectsTest
       end
     end
 
-    artifact 139589 "TestObjects"
+    artifact 147909 "TestObjects"
       stereotype "source"
       java_src "${comment}
 ${package}
@@ -1102,12 +1442,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 ${definition}"
       associated_elems
-	class_ref 141125 // TestObjects
+	class_ref 150341 // TestObjects
       end
     end
   end
-
-  package_ref 142021 // project
-
-  package_ref 142149 // unknown
 end

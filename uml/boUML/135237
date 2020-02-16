@@ -1,6 +1,6 @@
 format 222
 "algorithm" // algorithm
-  revision 1
+  revision 2
   modified_by 69 "ACER"
   // class settings
   
@@ -1070,5 +1070,11 @@ ${definition}"
 	class_ref 139845 // TokenTest
       end
     end
+  end
+
+  simplerelation 141253
+    -_->
+      on 
+      package_ref 135237 // algorithm
   end
 end

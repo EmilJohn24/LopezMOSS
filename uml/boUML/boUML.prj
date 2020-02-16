@@ -1,6 +1,6 @@
 format 222
 "boUML"
-  revision 3
+  revision 4
   modified_by 69 "ACER"
 
 
@@ -46,7 +46,7 @@ format 222
   
   java_package "moss"
   ncouples 1
-  key "html dir" value "C:\\Users\\ACER\\LopezMOSS\\docs\\uml\\object/"
+  key "html dir" value "C:\\Users\\ACER\\LopezMOSS\\plan/"
   package_ref 134853 // unknown
 
   package_ref 135237 // algorithm
