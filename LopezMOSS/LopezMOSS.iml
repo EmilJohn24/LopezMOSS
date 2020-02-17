@@ -34,5 +34,6 @@
     </orderEntry>
     <orderEntry type="library" name="com.mysema.querydsl:querydsl-maven-plugin:3.7.4" level="project" />
     <orderEntry type="library" name="com.airhacks:afterburner.fx:1.7.0" level="project" />
+    <orderEntry type="library" name="org.eclipse.jdt:org.eclipse.jdt.core:3.7.1" level="project" />
   </component>
 </module>
