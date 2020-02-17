@@ -6,8 +6,12 @@
 
 <?import javafx.scene.control.ScrollPane?>
 <!--CHANGE: Changed anchor pane to scroll pane-->
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
 <ScrollPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="moss.gui.CorrelationMatrixMenu.CorrelationMatrixMenuPresenter">
-      <GridPane fx:id="correlationMatrixTable" gridLinesVisible="true" layoutX="47.0" layoutY="32.0">
+    <VBox>
+        <Button fx:id="rankButton" text="Rank Comparisons..."/>
+    <GridPane fx:id="correlationMatrixTable" gridLinesVisible="true" layoutX="47.0" layoutY="32.0">
         <columnConstraints>
           <ColumnConstraints hgrow="ALWAYS" minWidth="300.0" prefWidth="300.0" />
         </columnConstraints>
@@ -15,4 +19,5 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
+    </VBox>
 </ScrollPane>
