@@ -12,8 +12,102 @@ public final class ProjectsCorrelationMatrix implements Iterable<ProjectsCorrela
     //The only real restriction is that this should only be constructable within the package
     private final Collection<ResultRow> rows;
 
+    /**
+     * @param rows The rows of results to be loaded into the matrix
+     */
     private ProjectsCorrelationMatrix(Collection<ResultRow> rows){
         this.rows = rows;
+    }
+
+
+    /**
+     * @return A flattened version of the matrix. For example, if {@code project1} and {@code project2} have a result of 0.5,
+     * their result would be placed in a single ResultTrio object containing both projects and the score. The flattened list
+     * will not contain the diagonal (self-comparisons) of the matrix.
+     * @see ResultTrio
+     */
+    public List<ResultTrio> flatten(){
+        List<ResultTrio> resultTrios = new ArrayList<>();
+        for (ResultRow row : rows){
+            for (ResultSet.ResultRecord result : row.getResults()){
+                ResultTrio newTrio = new ResultTrio(row.getProject(), result.getProject(), result.getScore());
+                //NOTE:This part checks if both projects being compared are the same. This is because this diagonal always yields a score 1.0 and does not
+                //carry any info.
+                if (!resultTrios.contains(newTrio) && row.getProject() != result.getProject()){
+                    resultTrios.add(newTrio);
+                }
+            }
+        }
+        return resultTrios;
+    }
+
+
+    /**
+     * A comparison result between a pair of projects stored as one class as compared to rows. This will be used
+     * to output a flattened version of the projects
+     * @see ProjectsCorrelationMatrix::flatten
+     */
+    static public final class ResultTrio implements Comparable<ResultTrio>{
+        private final Project firstProject;
+        private final Project secondProject;
+        private final double score;
+
+        private ResultTrio(Project firstProject, Project secondProject, double score){
+            this.firstProject = firstProject;
+            this.secondProject = secondProject;
+            this.score = score;
+        }
+
+        /**
+         * @return First project
+         */
+        public final Project getFirstProject() {
+            return this.firstProject;
+        }
+
+        /**
+         * @return Second Project
+         */
+        public final Project getSecondProject() {
+            return this.secondProject;
+        }
+
+        /**
+         * @return Score of the comparison between the first and second project
+         */
+        public final double getScore() {
+            return score;
+        }
+
+        /**
+         * @param o ProjectTrio to be compared with
+         * @return If the two projects are asymmetrically the same. This means that a trio whose first and second project, and second and first projects are equal are the same
+         */
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            ResultTrio that = (ResultTrio) o;
+            return (Objects.equals(firstProject, that.firstProject) &&
+                    Objects.equals(secondProject, that.secondProject))
+                    ||
+                    ((Objects.equals(firstProject, that.secondProject)) &&
+                    Objects.equals(secondProject, that.firstProject));
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(firstProject, secondProject);
+        }
+
+        /**
+         * @param o Trio to be compared to
+         * @return The comparison of the score of the two results
+         */
+        @Override
+        public int compareTo(ResultTrio o) {
+            return Double.compare(score, o.score);
+        }
     }
 
 
@@ -28,7 +122,8 @@ public final class ProjectsCorrelationMatrix implements Iterable<ProjectsCorrela
      * @return An iterator for result rows
      */
     @Override
-    public Iterator<ResultRow> iterator() {
+    //CHANGE: Changed to final to prevent inheritance
+    final public Iterator<ResultRow> iterator() {
         return rows.iterator();
     }
 
