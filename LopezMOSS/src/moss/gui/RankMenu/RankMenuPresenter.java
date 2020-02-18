@@ -29,5 +29,6 @@ public class RankMenuPresenter {
                     new Text(resultTrio.getSecondProject().getName()),
                     CustomFXMLObjectsGenerators.generateColorCodedScorePane(resultTrio.getScore()));
         }
+        rankGridPane.setGridLinesVisible(true);
     }
 }

@@ -1,6 +1,7 @@
 package moss.gui.CorrelationMatrixMenu;
 
 import javafx.fxml.FXML;
+import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.layout.*;
@@ -67,8 +68,6 @@ public class CorrelationMatrixMenuPresenter {
             resultsPaneInRow.toArray(resultTextArray);
             correlationMatrixTable.addRow(row++, resultsPaneInRow.toArray(resultTextArray));
         }
-
-        correlationMatrixTable.setGridLinesVisible(true);
     }
     @FXML
     private void initialize(){
