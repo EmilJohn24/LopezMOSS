@@ -6,20 +6,28 @@ package metrics;
 
 
 // This class is intended to calculate all the halstead complexity metrics   
-public class HalsteadMetrics {
+@SuppressWarnings("WeakerAccess")
+public final class HalsteadMetrics {
 	
-	public int DistOperators, DistOperands, TotOperators, TotOperands;	
-	private int Vocabulary=0;
-	private int Proglen=0; 
-	private double CalcProgLen=0; 
-	private double Volume=0; 
-	private double Difficulty=0;
-	private double Effort=0;  
-	private double TimeReqProg=0;
-	private double TimeDelBugs=0;
-	
-	
-	// Initialize the variables in the constructor 
+	private int DistOperators, DistOperands, TotOperators, TotOperands;
+
+	public int getDistOperators() {
+		return DistOperators;
+	}
+
+	public int getDistOperands() {
+		return DistOperands;
+	}
+
+	public int getTotOperators() {
+		return TotOperators;
+	}
+
+	public int getTotOperands() {
+		return TotOperands;
+	}
+
+	// Initialize the variables in the constructor
 	public HalsteadMetrics() {
 		DistOperators=0;
 		DistOperands=0;
@@ -30,7 +38,7 @@ public class HalsteadMetrics {
 	
 	
 	// set number of DistOperators, DistOperands, TotOperators, and TotOperands
-	public void setParameters(int DistOprt, int DistOper, int TotOprt, int TotOper)
+	void setParameters(int DistOprt, int DistOper, int TotOprt, int TotOper)
 	{
 		DistOperators=DistOprt;
 		DistOperands=DistOper;
@@ -43,9 +51,7 @@ public class HalsteadMetrics {
 	// calculate the Program vocabulary
 	public int getVocabulary()
 	{
-		Vocabulary=DistOperators+DistOperands;
-		System.out.println("Vocabulary= "+ Vocabulary);
-		return Vocabulary;
+		return DistOperators+DistOperands;
 	}
 	
 	
@@ -53,9 +59,7 @@ public class HalsteadMetrics {
 	// calculate the Program length
 	public int getProglen()
 	{
-		Proglen=TotOperators+TotOperands;
-		System.out.println("Program Length= "+ Proglen);
-		return Proglen;
+		return TotOperators+TotOperands;
 	}
 	
 	
@@ -63,9 +67,7 @@ public class HalsteadMetrics {
 	// calculate the Calculated program length
 	public double getCalcProgLen()
 	{
-		CalcProgLen = DistOperators*(Math.log(DistOperators) / Math.log(2)) + DistOperands*(Math.log(DistOperands) / Math.log(2));
-		System.out.println("Calculated Program Length= "+ CalcProgLen);
-		return CalcProgLen;
+		return DistOperators*(Math.log(DistOperators) / Math.log(2)) + DistOperands*(Math.log(DistOperands) / Math.log(2));
 	}
 	
 	
@@ -73,9 +75,7 @@ public class HalsteadMetrics {
 	// calculate the Volume
 	public double getVolume()
 	{
-		Volume=(TotOperators+TotOperands)*(Math.log(DistOperators+DistOperands)/Math.log(2));
-		System.out.println("Volume= "+ Volume);
-		return Volume;
+		return (TotOperators+TotOperands)*(Math.log(DistOperators+DistOperands)/Math.log(2));
 	}
 	
 	
@@ -83,9 +83,7 @@ public class HalsteadMetrics {
 	// calculate the Difficulty
 	public double getDifficulty()
 	{
-		Difficulty=(DistOperators/2)*(TotOperands/(double)DistOperands);// 
-		System.out.println("Difficulty= "+ Difficulty);
-		return Difficulty;
+		return (DistOperators/2)*(TotOperands/(double)DistOperands);
 	}
 	
 	
@@ -93,9 +91,7 @@ public class HalsteadMetrics {
 	// calculate the Effort
 	public double getEffort()
 	{
-		Effort=((DistOperators/2)*(TotOperands/(double)DistOperands)) * ((TotOperators+TotOperands)*(Math.log(DistOperators+DistOperands)/Math.log(2)));
-		System.out.println("Effort= "+ Effort);
-		return Effort;
+		return ((DistOperators/2)*(TotOperands/(double)DistOperands)) * ((TotOperators+TotOperands)*(Math.log(DistOperators+DistOperands)/Math.log(2)));
 	}
 	
 	
@@ -103,9 +99,7 @@ public class HalsteadMetrics {
 	// calculate the Time required to program
 	public double getTimeReqProg()
 	{
-		TimeReqProg=(((DistOperators/2)*(TotOperands/(double)DistOperands)) * ((TotOperators+TotOperands)*(Math.log(DistOperators+DistOperands)/Math.log(2)))) /18;
-		System.out.println("Time Required to Program= "+ TimeReqProg + " seconds");
-		return TimeReqProg;
+		return (((DistOperators/2)*(TotOperands/(double)DistOperands)) * ((TotOperators+TotOperands)*(Math.log(DistOperators+DistOperands)/Math.log(2)))) /18;
 	}
 	
 	
@@ -113,8 +107,6 @@ public class HalsteadMetrics {
 	// calculate the Number of delivered bugs
 	public double getTimeDelBugs()
 	{
-		TimeDelBugs = ((TotOperators+TotOperands)*(Math.log(DistOperators+DistOperands)/Math.log(2))) / 3000;
-		System.out.println("Number of delivered bugs= "+ TimeDelBugs);
-		return TimeDelBugs;
+		return ((TotOperators+TotOperands)*(Math.log(DistOperators+DistOperands)/Math.log(2))) / 3000;
 	}	
 }
