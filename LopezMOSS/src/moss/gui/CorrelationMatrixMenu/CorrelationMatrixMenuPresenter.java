@@ -41,22 +41,33 @@ public class CorrelationMatrixMenuPresenter {
     private void loadModelMatrixToTable(){
         final ProjectsCorrelationMatrix matrix = model.getMatrix();
         //PHASE 1: Load headers
-        Collection<Text> nameText = new ArrayList<>();
-        nameText.add(new Text());
+        Collection<Text> nameTexts = new ArrayList<>();
+        nameTexts.add(new Text());
         for (String name : matrix.getProjectNames()){
-            nameText.add(new Text(name));
+            nameTexts.add(new Text(name));
         }
-        Text[] nameTextArray = new Text[nameText.size()];
-        nameText.toArray(nameTextArray);
+        Text[] nameTextArray = new Text[nameTexts.size()];
+        nameTexts.toArray(nameTextArray);
         correlationMatrixTable.addRow(0, nameTextArray);
 
+        for (int i = 0; i != nameTextArray.length - 1; ++i){
+            //SUBPART: This part makes all the column sizes the same. It is a bit hacky since it uses
+            //an enhanced for loop for its iteration count, not the content of the iteration itself.
+            //I might change this last implementation detail if given the chance
+            ColumnConstraints columnSize = new ColumnConstraints(250);
+            correlationMatrixTable.getColumnConstraints().add(columnSize);
+        }
 
         //PHASE 2: Load all the results from the table into the grid pane
         int row = 1;
         for (ResultRow resultRow : matrix.getRows()){
             Collection<Pane> resultsPaneInRow = new ArrayList<>();
             Pane newPanes = new StackPane(new Text(resultRow.getProject().getName()));
+            //set the size of each column here
             newPanes.setPrefWidth(500);
+            newPanes.setMaxWidth(500);
+            newPanes.setMaxWidth(500);
+
             resultsPaneInRow.add(newPanes);
             for (ResultSet.ResultRecord result : resultRow.getResults()){
                 //CHANGE: Colored pane generation moved to utility function, allowing briefer code elsewere
