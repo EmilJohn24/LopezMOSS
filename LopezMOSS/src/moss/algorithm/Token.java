@@ -80,6 +80,14 @@ public class Token {
     }
 
     /**
+     * @apiNote I am still on the middle of contemplating whether to make this interface public because it is risky to bring out an un-casted object in the limelight
+     * @return Returns the underlying value of the token
+     */
+    final Object getValue(){
+        return value;
+    }
+
+    /**
      * @return returns the token's line number
      */
     public final int getLineNo() {

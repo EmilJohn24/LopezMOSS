@@ -73,9 +73,8 @@ public class MultiProjectMenuService {
      * This will bring up
      * @return Path given by the user
      */
-    Path requestDirectoryFromUser() {
-        //TODO: Consider moving this to the multi-project menu presenter. Having a GUI-based request feels out of place here
-        //NOTE: This has been made package-private precisely because of the reasons stated above.
+    public Path requestDirectoryFromUser() {
+        //CHANGE: Made public because it will be used by performance-testing functions
         final DirectoryChooser directoryChooser = new DirectoryChooser();
         final File requestedDirectory = directoryChooser.showDialog(new Stage());
         //We need to check if the directory is valid
