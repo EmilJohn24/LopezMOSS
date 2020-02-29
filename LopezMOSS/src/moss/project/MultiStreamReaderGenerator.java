@@ -14,7 +14,8 @@ import java.util.Collections;
 * The benefits of this class is that it minimizes the actual number of copies of the characters needed by the package.
 * */
 class MultiStreamReaderGenerator {
-    private final byte[] combinedByteArray;
+    //CHANGE: Changed storage to String from the original byte array
+    private final String combinedString;
 
     /**
      * @param streams Input streams to be combined
@@ -25,7 +26,9 @@ class MultiStreamReaderGenerator {
                 new SequenceInputStream(Collections.enumeration(streams));
         ByteArrayOutputStream byteos = new ByteArrayOutputStream();
         IOUtils.copy(combinedReaderStream, byteos);
-        combinedByteArray = byteos.toByteArray();
+        //CHANGE: Turned this into a local variable. Its contents will be used as the buffer of the byte
+        byte[] combinedByteArray = byteos.toByteArray();
+        combinedString = new String(combinedByteArray);
     }
 
     /**
@@ -36,8 +39,6 @@ class MultiStreamReaderGenerator {
      * @return Reader generated from combining all the input streams
      * */
     final Reader generate(){
-        return new BufferedReader(
-                new InputStreamReader(
-                        new ByteArrayInputStream(combinedByteArray)));
+        return new StringReader(combinedString);
     }
 }
