@@ -5,7 +5,10 @@
     <option name="CUSTOM_SCOPE_NAME" value="ProjectOnly" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c9d7883-4ba3-4ca5-9987-924617f718d6" name="Default Changelist" comment="" />
+    <list default="true" id="1c9d7883-4ba3-4ca5-9987-924617f718d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,24 +25,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/SimpleMultiProjectComparisonTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -48,13 +33,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/moss/gui/MultiProjectMenu/MultiProjectMenuServiceTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            <state relative-caret-position="539">
+              <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1628#1629#0" expanded="true" />
+                <element signature="e#1683#1684#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/metrics/PerformanceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/moss/project/MultiProjectStorage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
+              <folding>
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moss/algorithm/Token.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="1377">
               <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
               <folding>
                 <element signature="e#2594#2595#0" expanded="true" />
@@ -174,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/moss/project/Project.java" />
         <option value="$PROJECT_DIR$/src/moss/algorithm/HashingTokenizer.java" />
         <option value="$PROJECT_DIR$/src/moss/algorithm/TokenClusterOccurrenceTable.java" />
-        <option value="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java" />
         <option value="$PROJECT_DIR$/src/moss/gui/RankMenu/RankMenuView.java" />
         <option value="$PROJECT_DIR$/src/moss/gui/RankMenu/RankMenuModel.java" />
         <option value="$PROJECT_DIR$/src/moss/gui/RankMenu/RankMenuService.java" />
@@ -194,6 +205,7 @@
         <option value="$PROJECT_DIR$/src/moss/algorithm/TokenTest.java" />
         <option value="$PROJECT_DIR$/src/moss/gui/MultiProjectMenu/MultiProjectMenuService.java" />
         <option value="$PROJECT_DIR$/src/metrics/PerformanceTest.java" />
+        <option value="$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java" />
       </list>
     </option>
   </component>
@@ -244,6 +256,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="moss" type="462c0819:PsiDirectoryNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LopezMOSS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LopezMOSS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="moss" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LopezMOSS" type="b2602c69:ProjectViewProjectNode" />
@@ -320,7 +339,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TokenTest">
+  <component name="RunManager" selected="JUnit.PerformanceTest.correlationMatrixCreationTime">
     <configuration name="MultiStreamReaderGeneratorTest.testGenerate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LopezMOSS" />
       <extension name="coverage">
@@ -402,11 +421,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PerformanceTest.correlationMatrixCreationTime" />
         <item itemvalue="JUnit.TokenTest" />
         <item itemvalue="JUnit.MultiStreamReaderGeneratorTest.testGenerate" />
         <item itemvalue="JUnit.ProjectsTest.testCompare" />
         <item itemvalue="JUnit.ProjectFlatReaderDistributorTest.testDistribute" />
-        <item itemvalue="JUnit.PerformanceTest.correlationMatrixCreationTime" />
       </list>
     </recent_temporary>
   </component>
@@ -432,24 +451,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PerformanceTest_correlationMatrixCreationTime - 2020.02.21 at 22h 18m 50s.xml">
-      <configuration name="PerformanceTest.correlationMatrixCreationTime" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PerformanceTest_correlationMatrixCreationTime - 2020.02.21 at 22h 20m 23s.xml">
-      <configuration name="PerformanceTest.correlationMatrixCreationTime" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PerformanceTest_correlationMatrixCreationTime - 2020.02.22 at 10h 29m 19s.xml">
-      <configuration name="PerformanceTest.correlationMatrixCreationTime" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PerformanceTest_correlationMatrixCreationTime - 2020.02.22 at 10h 29m 44s.xml">
-      <configuration name="PerformanceTest.correlationMatrixCreationTime" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PerformanceTest_correlationMatrixCreationTime - 2020.02.22 at 10h 30m 16s.xml">
-      <configuration name="PerformanceTest.correlationMatrixCreationTime" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PerformanceTest_correlationMatrixCreationTime - 2020.02.22 at 10h 30m 37s.xml">
-      <configuration name="PerformanceTest.correlationMatrixCreationTime" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProjectFlatReaderDistributorTest_testDistribute - 2020.02.22 at 13h 52m 36s.xml">
       <configuration name="ProjectFlatReaderDistributorTest.testDistribute" configurationId="JUnit" />
     </history-entry>
@@ -461,6 +462,24 @@
     </history-entry>
     <history-entry file="TokenTest - 2020.02.22 at 13h 55m 10s.xml">
       <configuration name="TokenTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PerformanceTest_correlationMatrixCreationTime - 2020.02.29 at 20h 40m 28s.xml">
+      <configuration name="PerformanceTest.correlationMatrixCreationTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PerformanceTest_correlationMatrixCreationTime - 2020.02.29 at 20h 40m 35s.xml">
+      <configuration name="PerformanceTest.correlationMatrixCreationTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PerformanceTest_correlationMatrixCreationTime - 2020.02.29 at 20h 41m 35s.xml">
+      <configuration name="PerformanceTest.correlationMatrixCreationTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PerformanceTest_correlationMatrixCreationTime - 2020.02.29 at 20h 42m 30s.xml">
+      <configuration name="PerformanceTest.correlationMatrixCreationTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PerformanceTest_correlationMatrixCreationTime - 2020.02.29 at 20h 43m 02s.xml">
+      <configuration name="PerformanceTest.correlationMatrixCreationTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PerformanceTest_correlationMatrixCreationTime - 2020.02.29 at 20h 43m 16s.xml">
+      <configuration name="PerformanceTest.correlationMatrixCreationTime" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -474,8 +493,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6898017" visible="true" weight="0.16107382" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6898017" visible="true" weight="0.1671141" />
       <window_info id="Structure" order="1" sideWeight="0.24220963" side_tool="true" weight="0.3577181" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -561,12 +581,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/gui/MultiProjectMenu/MultiProjectMenu.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/gui/utilities/CustomColorOperations.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -636,12 +656,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/algorithm/SoftwareMetrics.java" />
     <entry file="file://$PROJECT_DIR$/src/moss/gui/RankMenu/RankMenu.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/gui/RankMenu/RankMenuModel.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -656,12 +676,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenu.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/gui/CorrelationMatrixMenu/CorrelationMatrixMenuModel.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -690,31 +710,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/MultiProjectStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/project/ProjectFlatReaderDistributor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -894,16 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/metrics/PerformanceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/projectpairmachine/SimpleMultiProjectComparisonTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -918,6 +907,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/gui/MultiProjectMenu/MultiProjectMenuServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -925,12 +924,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/gui/MultiProjectMenu/MultiProjectMenuServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/metrics/PerformanceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        <state relative-caret-position="391">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/project/MultiProjectStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+          <folding>
+            <element signature="e#2594#2595#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -969,20 +997,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/TokenTest.java">
+    <entry file="file://$PROJECT_DIR$/src/moss/project/MultiStreamReaderGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moss/algorithm/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+        <state relative-caret-position="539">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
           <folding>
-            <element signature="e#2594#2595#0" expanded="true" />
-            <element signature="e#2622#2623#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1628#1629#0" expanded="true" />
+            <element signature="e#1683#1684#0" expanded="true" />
           </folding>
         </state>
       </provider>
